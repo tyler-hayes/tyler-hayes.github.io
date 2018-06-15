@@ -23,14 +23,27 @@
       text-transform: uppercase;
       color: #303030;
       font-weight: 600;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
+  }
+  h3 {
+      font-size: 22px;
+      color: #303030;
+      font-weight: 400;
+      margin-bottom: 20px;
   }
   h4 {
       font-size: 19px;
       line-height: 1.375em;
       color: #303030;
       font-weight: 400;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
+  }  
+  h5 {
+      font-size: 16px;
+      line-height: 1.375em;
+      color: #303030;
+      font-weight: 400;
+      margin-bottom: 15px;
   }  
   .jumbotron {
       background-color: #f4511e;
@@ -111,7 +124,7 @@
   .panel-footer h3 {
       font-size: 32px;
 	  color: #303030;
-      font-weight: 550;
+      font-weight: 600;
 	  margin-bottom: 30px;
   }
   .panel-footer h4 {
@@ -205,13 +218,14 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#myPage">Tyler Hayes</a>
+      <a class="navbar-brand" href="#myPage"><font face="Chester">Tyler Hayes</font></a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
         <li><a href="#about">ABOUT</a></li>
         <li><a href="#recent">RECENT</a></li>
         <li><a href="#research">RESEARCH</a></li>
+		<li><a href="#publications">PUBLICATIONS</a></li>
               <li data-toggle="collapse" data-target=".navbar-collapse.in"><a href="data/Tyler_Hayes_CV.pdf" target="_blank">CV</a></li>
       
         </h1>
@@ -241,7 +255,7 @@
 <div id="about" class="container-fluid">
   <div class="row">
     <div class="col-sm-5 col-sm-offset-2">
-      <h2>About Me</h2><br>   
+      <h2>About Me</h2>
       <h4>Hello! I am a second year PhD student in the Chester F. Carlson Center for Imaging Science at the Rochester Institute of Technology (RIT) in Rochester, NY. I received a BS in Applied Mathematics from RIT in 2014 and an MS in Applied and Computational Mathematics from RIT in 2017. My current research interests include lifelong machine learning, computer vision, and computational mathematics.</p>
       </div>
       <div class="col-sm-3"><br><br>
@@ -254,8 +268,8 @@
 <div id="recent" class="container-fluid bg-grey">
   <div class="row">
     <div class="col-sm-8 col-sm-offset-2">
-      <h2>Recent News</h2><br>
-           <h4><strong>February 2018:</strong> Our paper "Compassionately Conservative Balanced Cuts for Image Segmentation" was accepted for presentation at CVPR 2018. </h4>
+      <h2>Recent News</h2>
+           <h4><strong>February 2018:</strong> Our paper "Compassionately Conservative Balanced Cuts for Image Segmentation" was accepted for poster presentation at CVPR 2018. </h4>
            <h4><strong>November 2017:</strong> Our paper "Measuring Catastrophic Forgetting in Neural Networks" was accepted for an oral presentation at AAAI 2018. </h4>
            <h4><strong>June 2017:</strong> Started work as a Research Intern at the US Naval Research Laboratory (NRL).</h4>
            <h4><strong>March 2017:</strong> Successfully defended my MS thesis. </h4>
@@ -268,12 +282,12 @@
 <div id="research" class="container-fluid">
   <div class="row">
     <div class="col-sm-8 col-sm-offset-2">
-  <h2>Research</h2><br></div></div>
+  <h2>Research</h2></div></div>
   
   <!-- CVPR 2018 -->
   <div class="row">
   <div class="col-sm-8 col-sm-offset-2">
-    <h3><a href="http://openaccess.thecvf.com/content_cvpr_2018/papers/Cahill_Compassionately_Conservative_Balanced_CVPR_2018_paper.pdf" target="_blank">Compassionately Conservative Balanced Cuts for Image Segmentation</a></h3>
+    <h3><strong>CVPR 2018</strong>: <a href="http://openaccess.thecvf.com/content_cvpr_2018/papers/Cahill_Compassionately_Conservative_Balanced_CVPR_2018_paper.pdf" target="_blank" style="color:black">Compassionately Conservative Balanced Cuts for Image Segmentation</a></h3>
 	<h4>Nathan D. Cahill, <strong>Tyler L. Hayes</strong>, Renee T. Meinhold, John F. Hamilton</h4></div></div>
 
     <div class="row">
@@ -288,7 +302,7 @@
      <!-- AAAI 2018 -->
 	<div class="row">
 	<div class="col-sm-8 col-sm-offset-2">
-	<h3><a href="https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16410" target="_blank">Measuring Catastrophic Forgetting in Neural Networks</a></h3>
+	<h3><strong>AAAI 2018</strong>: <a href="https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16410" target="_blank" style="color:black">Measuring Catastrophic Forgetting in Neural Networks</a></h3>
 	<h4>Ronald Kemker, Angelina Abitino, Marc McClure, <strong>Tyler L. Hayes</strong>, Christopher Kanan</h4></div></div>
   
     <div class="row">
@@ -299,6 +313,41 @@
        <h5 class="h5-small"><p>Deep neural networks are used in many state-of-the-art systems for machine perception. Once a network is trained to do a specific task, e.g., bird classification, it cannot easily be trained to do new tasks, e.g., incrementally learning to recognize additional bird species or learning an entirely different task such as flower recognition. When new tasks are added, typical deep neural networks are prone to catastrophically forgetting previous tasks. Networks that are capable of assimilating new information incrementally, much like how humans form new memories over time, will be more efficient than retraining the model from scratch each time a new task needs to be learned. There have been multiple attempts to develop schemes that mitigate catastrophic forgetting, but these methods have not been directly compared, the tests used to evaluate them vary considerably, and these methods have only been evaluated on small-scale problems (e.g., MNIST). In this paper, we introduce new metrics and benchmarks for directly comparing five different mechanisms designed to mitigate catastrophic forgetting in neural networks: regularization, ensembling, rehearsal, dual-memory, and sparse-coding. Our experiments on real-world images and sounds show that the mechanism(s) that are critical for optimal performance vary based on the incremental training paradigm and type of data being used, but they all demonstrate that the catastrophic forgetting problem has yet to be solved.</p></h5>
     </div>
         </div>
+</div>
+
+
+<!-- Container (Publications) -->
+<div id="publications" class="container-fluid bg-grey">
+  <div class="row">
+    <div class="col-sm-10 col-sm-offset-1">
+      <h2>Publications</h2>
+	  <h4>Peer-Reviewed Conference Papers</h4>
+		<h5><ul style="list-style-type:circle">
+		  <li>N.D. Cahill, <strong>T.L. Hayes</strong>, R.T. Meinhold, and J.F. Hamilton. <a href="http://openaccess.thecvf.com/content_cvpr_2018/papers/Cahill_Compassionately_Conservative_Balanced_CVPR_2018_paper.pdf" style="color:black">Compassionately conservative balanced cuts for image segmentation</a>. In: Proc. IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2018</li><br>
+		  <li>R. Kemker, M. McClure, A. Abitino, <strong>T.L. Hayes</strong>, and C. Kanan. <a href="https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16410" style="color:black">Measuring catastrophic forgetting in neural networks</a>. In: AAAI, 2018
+</li>
+		</ul></h5>
+		
+	<h4>Conference Papers</h4>
+		<h5><ul style="list-style-type:circle">
+		  <li><strong>T.L. Hayes</strong>, R.T. Meinhold, J.F. Hamilton, and N.D. Cahill. <a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/10198/101980O/Piecewise-flat-embeddings-for-hyperspectral-image-analysis/10.1117/12.2262302.full" style="color:black">Piecewise flat embeddings for hyperspectral image analysis</a>. In: Proc. SPIE DCS Defense and Security: Algorithms and Technologies for Multispectral, Hyperspectral, and Ultraspectral Imagery XXIII, 2017</li><br>
+		  <li>R.T. Meinhold, <strong>T.L. Hayes</strong>, and N.D. Cahill. <a href="https://arxiv.org/abs/1612.06496" style="color:black">Efficiently computing piecewise flat embeddings for data clustering and image segmentation</a>. In: Proc. IEEE MIT Undergraduate Research and Technology Conference, 2016
+</li>
+		</ul></h5>
+		
+		<h4>Workshops</h4>
+	<h5><ul style="list-style-type:circle">
+	  <li><strong>T.L. Hayes</strong>, R. Kemker, N.D. Cahill, and C. Kanan. <a href="http://openaccess.thecvf.com/content_CVPR_2018/papers/w40/Hayes_New_Metrics_and_CVPR_2018_paper.pdf" style="color:black">New metrics and experimental paradigms for continual learning</a>. CVPR Workshop: Real-World Challenges and New Benchmarks for Deep Learning in Robotic Vision, Salt Lake City, UT, 2018
+</li>
+	</ul></h5>
+	
+	<h4>Thesis</h4>
+		<h5><ul style="list-style-type:circle">
+	  <li><strong>T.L. Hayes</strong>. <a href="http://scholarworks.rit.edu/theses/9409/" style="color:black">Compassionately conservative normalized cuts for image segmentation</a>. M.S. Thesis, Rochester Institute of Technology, 2017
+</li>
+	</ul></h5>
+    </div>
+  </div>
 </div>
 
 

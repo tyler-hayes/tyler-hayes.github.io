@@ -77,9 +77,9 @@ img {
       border: none;
       border-radius: 0;
   }
-  .thumbnail img {
-      width: 100%;
-      height: 100%;
+  .thumbnail2 {
+      width: 60px;
+      height: auto;
       margin-bottom: 10px;
   }
   .carousel-control.right, .carousel-control.left {
@@ -218,6 +218,22 @@ img {
 	max-width: 480px;
     height: auto;
 }
+.external-link-icon {
+    float: left;
+    margin:5pt;
+    width:50pt;
+    height:50pt;
+}
+.external-link-container {
+    text-align:center;
+    width:100%;
+    height:60pt;
+}
+.external-link-center-wrapper {
+   margin: auto;
+   width: 180pt;
+   height: 60pt;
+}
   </style>
 </head>
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
@@ -246,16 +262,25 @@ img {
 </nav>
 
 <div class="jumbotron text-center">
-  <h1>Tyler Hayes<br><br>
-    <div class="row">
-    <div class="col-sm-1 col-sm-offset-5">
-  <h1><a href="https://www.linkedin.com/in/tyler-hayes-6a91a461/" target="_blank">
-            <span><img border="0" alt="Tyler Hayes Linkedin" src="images/linkedin-logo.png" width="20" class="img-responsive"></img></span></a></h1></div>
-	<div class="col-sm-1">
-	  <h1><a href="https://scholar.google.com/citations?user=LZ1PWfcAAAAJ&hl=en#" target="_blank">
-           <span><img border="0" alt="Tyler Hayes Google Scholar" src="images/gs-logo.png" width="20" class="img-responsive"></img></span></a></h1></div>
-  </h1>
-      </div>
+  <h1>Tyler Hayes<br>
+  	<div class = "external-link-container">
+	  <div class="external-link-center-wrapper">
+	    <div class = "external-link-icon">
+	    	<h1><a href="https://www.linkedin.com/in/tyler-hayes-6a91a461/" target="_blank">
+            	<span><img border="0" alt="Tyler Hayes Linkedin" src="images/linkedin-logo.png"></img></span>
+            </a></h1>
+	    </div>
+	    <div class = "external-link-icon">
+	    	<h1><a href="https://scholar.google.com/citations?user=LZ1PWfcAAAAJ&hl=en#" target="_blank">
+            	<span><img border="0" alt="Tyler Hayes Google Scholar" src="images/gs-logo.png"></img></span>
+            </a></h1>
+	    </div>
+	    <div class = "external-link-icon">
+	    	<h1><a href="" rel="nofollow" onclick="this.href='mailto:' + 'tlh6792' + '@' + 'rit.edu'" target="_blank">
+            	<span><img border="0" alt="Tyler Hayes Contact" src="images/mail-logo.png"></img></span>
+            </a></h1>
+	    </div>
+	  </div>
 	</div>
 </div>
      

@@ -14,7 +14,8 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   <style>
   body {
-      font: 400 15px Lato, sans-serif;
+      font: 400 15px Montserrat, sans-serif;
+      font-family: Montserrat, sans-serif;
       line-height: 1.8;
       color: #818181;
   }
@@ -25,48 +26,73 @@ img {
   h2 {
       font-size: 24px;
       text-transform: uppercase;
-      color: #303030;
       font-weight: 600;
       margin-bottom: 20px;
+	  text-align: center;
+      font-family: Montserrat, sans-serif;
+      letter-spacing: 4px;
   }
   h3 {
       font-size: 22px;
-      color: #303030;
       font-weight: 400;
       margin-bottom: 20px;
+	  text-align: left;
   }
   h4 {
       font-size: 19px;
       line-height: 1.375em;
-      color: #303030;
       font-weight: 400;
       margin-bottom: 20px;
+	  text-align: left;
   }  
   h5 {
       font-size: 16px;
       line-height: 1.375em;
-      color: #303030;
       font-weight: 400;
       margin-bottom: 15px;
   }  
   .jumbotron {
-      background-color: #f4511e;
-      color: #fff;
+	  background-image: url("images/bulbs.jpg");
+	  background-size: 142% auto;
+	  background-align: center;
       padding: 100px 25px;
       font-family: Montserrat, sans-serif;
   }
   .container-fluid {
       padding: 60px 50px;
   }
-  .bg-orange {
-      background-color: #feebe6;
+  .section-navbar {
+      color: #C0B283;
+	  background-color: #FFFFFF;
   }
-  .bg-grey {
-      background-color: #f6f6f6;
+  .section-default {
+      color: #373737;
+	  background-color: #F4F4F4;
   }
-  .logo-small {
-      color: #f4511e;
-      font-size: 50px;
+  .section-about-me, .section-about-me h4 {
+      color: #373737;
+	  background-color: #F4F4F4;
+	  text-align: justify;
+  }
+  .section-recent-news {
+      color: #373737;
+	  background-color: #ede6de;
+  }
+  .section-research {
+      color: #373737;
+	  background-color: #F4F4F4;
+	  text-align: justify;
+  }
+  .section-research h3 {
+	  text-align: center;
+  }
+  .section-research h4 {
+	  text-align: center;
+  }
+  .section-publications, .section-publications a {
+      color: #373737;
+	  background-color: #ede6de;
+	  text-align: justify;
   }
   .logo {
       color: #f4511e;
@@ -130,22 +156,17 @@ img {
   }
   .panel-footer h3 {
       font-size: 32px;
-	  color: #303030;
       font-weight: 600;
 	  margin-bottom: 30px;
   }
   .panel-footer h4 {
-      color: #aaa;
       font-size: 14px;
   }
   .panel-footer .btn {
       margin: 15px 0;
-      background-color: #f4511e;
-      color: #fff;
   }
   .navbar {
       margin-bottom: 0;
-      background-color: #f4511e;
       z-index: 9999;
       border: 0;
       font-size: 12px !important;
@@ -155,20 +176,24 @@ img {
       font-family: Montserrat, sans-serif;
   }
   .navbar li a, .navbar .navbar-brand {
-      color: #fff !important;
+      font-family: Montserrat, sans-serif;
   }
   .navbar-nav li a:hover, .navbar-nav li.active a {
-      color: #f4511e !important;
-      background-color: #fff !important;
+	  background-color: #C0B283 !important;
+	  color: #FFFFFF !important;
+      transition: 0.3s;
   }
   .navbar-default .navbar-toggle {
       border-color: transparent;
       color: #fff !important;
   }
+  footer {
+	  background-color: #ffffff;
+  }
   footer .glyphicon {
       font-size: 20px;
       margin-bottom: 20px;
-      color: #f4511e;
+	  color: #C0B283;
   }
   .slideanim {visibility:hidden;}
   .slide {
@@ -213,16 +238,21 @@ img {
         font-size: 150px;
     }
   }
-.responsive {
-    width: 100%;
-	max-width: 480px;
-    height: auto;
-}
 .external-link-icon {
     float: left;
-    margin:5pt;
+    margin: 0pt 5pt;
     width:50pt;
     height:50pt;
+	opacity: 1;
+}
+.external-link-icon img {
+	transition: 0.3s;
+	border-radius: 50%;
+}
+.external-link-icon img:hover {
+	background-color: #C0B283;
+	transition: 0.3s;
+	border-radius: 50%;
 }
 .external-link-container {
     text-align:center;
@@ -230,15 +260,34 @@ img {
     height:60pt;
 }
 .external-link-center-wrapper {
-   margin: auto;
-   width: 180pt;
+   margin: 20px auto auto;
+   width: 240pt;
    height: 60pt;
+}
+
+.button {
+  background-color: #373737;
+  border: none;
+  color: white;
+  padding: 8px 32px;
+  text-align: center;
+  font-size: 18px;
+  margin: 4px 2px;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+  cursor: pointer;
+  border-radius: 5px;
+}
+.button:hover {
+  background-color: #C0B283;
+  color: #ffffff;
 }
   </style>
 </head>
-<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60">
+<body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60" class="section-default">
 
-<nav class="navbar navbar-default navbar-fixed-top">
+<nav class="navbar navbar-default navbar-fixed-top section-navbar">
   <div class="container">
     <div class="navbar-header">
       <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
@@ -246,7 +295,7 @@ img {
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>                        
       </button>
-      <a class="navbar-brand" href="#myPage"><font face="sans-serif">Tyler Hayes</font></a>
+      <a class="navbar-brand" href="#myPage">Tyler Hayes</a>
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
@@ -266,19 +315,24 @@ img {
   	<div class = "external-link-container">
 	  <div class="external-link-center-wrapper">
 	    <div class = "external-link-icon">
-	    	<h1><a href="https://www.linkedin.com/in/tyler-hayes-6a91a461/" target="_blank">
+	    	<a href="https://www.linkedin.com/in/tyler-hayes-6a91a461/" target="_blank">
             	<span><img border="0" alt="Tyler Hayes Linkedin" src="images/linkedin-logo.png"></img></span>
-            </a></h1>
+            </a>
 	    </div>
 	    <div class = "external-link-icon">
-	    	<h1><a href="https://scholar.google.com/citations?user=LZ1PWfcAAAAJ&hl=en#" target="_blank">
+	    	<a href="https://scholar.google.com/citations?user=LZ1PWfcAAAAJ&hl=en#" target="_blank">
             	<span><img border="0" alt="Tyler Hayes Google Scholar" src="images/gs-logo.png"></img></span>
-            </a></h1>
+            </a>
+	    </div>
+		<div class = "external-link-icon">
+	    	<a href="https://github.com/tyler-hayes" target="_blank">
+            	<span><img border="0" alt="Tyler Hayes GitHub" src="images/github-logo.png"></img></span>
+            </a>
 	    </div>
 	    <div class = "external-link-icon">
-	    	<h1><a href="" rel="nofollow" onclick="this.href='mailto:' + 'tlh6792' + '@' + 'rit.edu'" target="_blank">
+	    	<a href="" rel="nofollow" onclick="this.href='mailto:' + 'tlh6792' + '@' + 'rit.edu'" target="_blank">
             	<span><img border="0" alt="Tyler Hayes Contact" src="images/mail-logo.png"></img></span>
-            </a></h1>
+            </a>
 	    </div>
 	  </div>
 	</div>
@@ -289,20 +343,20 @@ img {
 
 
 <!-- Container (About Section) -->
-<div id="about" class="container-fluid">
+<div id="about" class="container-fluid section-about-me">
   <div class="row">
+    <h2>About Me</h2>
     <div class="col-sm-6 col-sm-offset-2">
-      <h2>About Me</h2>
       <h4>Hello! I am a third year PhD student in the Chester F. Carlson Center for Imaging Science at the Rochester Institute of Technology (RIT) in Rochester, NY. I received a BS in Applied Mathematics from RIT in 2014 and an MS in Applied and Computational Mathematics from RIT in 2017. My current research interests include lifelong machine learning, computer vision, and computational mathematics.</p>
-      </div>
-      <div class="col-sm-2"><br><br>
-      	<span><img src="images/tyler.jpg" alt="Tyler Hayes" class="img-responsive"></span>
     </div>
+    <div class="col-sm-2">
+      <span><img src="images/tyler.jpg" alt="Tyler Hayes" class="img-responsive" style="border-radius: 25px"></span>
+	</div>
   </div>
 </div>
 
 <!-- Container (Recent News) -->
-<div id="recent" class="container-fluid bg-orange">
+<div id="recent" class="container-fluid section-recent-news">
   <div class="row">
     <div class="col-sm-8 col-sm-offset-2">
       <h2>Recent News</h2>
@@ -318,83 +372,95 @@ img {
 
 
 <!-- Container (Research Section) -->
-<div id="research" class="container-fluid">
-  <div class="row">
-    <div class="col-sm-8 col-sm-offset-2">
-  <h2>Research</h2></div></div>
+<div id="research" class="container-fluid section-research">
+	<div class="row">
+		<div class="col-sm-8 col-sm-offset-2">
+			<h2>Research</h2>
+		</div>
+	</div>
   
     <!-- ICRA 2019 -->
-  <div class="row">
-  <div class="col-sm-8 col-sm-offset-2">
-    <h3><strong>ICRA 2019</strong>: <a href="https://arxiv.org/abs/1809.05922" target="_blank" style="color:black">Memory Efficient Experience Replay for Streaming Learning</a></h3>
-	<h4><strong>Tyler L. Hayes</strong>, Nathan D. Cahill, Christopher Kanan</h4>
-	<h3><a href="https://arxiv.org/abs/1809.05922" target="_blank"><kbd>arXiv</kbd></a> <a href="https://github.com/tyler-hayes/ExStream" target="_blank"><kbd>Code</kbd></a></h3> </div></div>
-
+	<div class="row">
+		<div class="col-sm-8 col-sm-offset-2">
+			<h3><strong>ICRA 2019</strong>: Memory Efficient Experience Replay for Streaming Learning</h3>
+			<h4><strong>Tyler L. Hayes</strong>, Nathan D. Cahill, Christopher Kanan</h4>
+			<h3>
+				<a href="https://arxiv.org/abs/1809.05922" target="_blank"><button class="button">arXiv</button></a>
+				<a href="https://github.com/tyler-hayes/ExStream" target="_blank"><button class="button">Code</button></a>
+			</h3>
+		</div>
+	</div>
 
     <div class="row">
-      <div class="col-sm-3 col-sm-offset-2">
-     <img src="images/icra_2019.png" alt="ICRA 2019" class="img-responsive"></img>
+		<div class="col-sm-3 col-sm-offset-2">
+			<img src="images/icra_2019.png" alt="ICRA 2019" class="img-responsive"></img>
+		</div>
+		<div class="col-sm-5">
+			<h5 class="h5-small"><p>In supervised machine learning, an agent is typically trained once and then deployed. While this works well for static settings, robots often operate in changing environments and must quickly learn new things from data streams. In this paradigm, known as streaming learning, a learner is trained online, in a single pass, from a data stream that cannot be assumed to be independent and identically distributed (iid). Streaming learning will cause conventional deep neural networks (DNNs) to fail for two reasons: 1) they need multiple passes through the entire dataset; and 2) non-iid data will cause catastrophic forgetting. An old fix to both of these issues is rehearsal. To learn a new example, rehearsal mixes it with previous examples, and then this mixture is used to update the DNN. Full rehearsal is slow and memory intensive because it stores all previously observed examples, and its effectiveness for preventing catastrophic forgetting has not been studied in modern DNNs. Here, we describe the ExStream algorithm for memory efficient rehearsal and compare it to alternatives. We find that full rehearsal can eliminate catastrophic forgetting in a variety of streaming learning settings, with ExStream performing well using far less memory and computation.</p></h5>
+		</div>
     </div>
-      <div class="col-sm-5">
-       <h5 class="h5-small"><p>In supervised machine learning, an agent is typically trained once and then deployed. While this works well for static settings, robots often operate in changing environments and must quickly learn new things from data streams. In this paradigm, known as streaming learning, a learner is trained online, in a single pass, from a data stream that cannot be assumed to be independent and identically distributed (iid). Streaming learning will cause conventional deep neural networks (DNNs) to fail for two reasons: 1) they need multiple passes through the entire dataset; and 2) non-iid data will cause catastrophic forgetting. An old fix to both of these issues is rehearsal. To learn a new example, rehearsal mixes it with previous examples, and then this mixture is used to update the DNN. Full rehearsal is slow and memory intensive because it stores all previously observed examples, and its effectiveness for preventing catastrophic forgetting has not been studied in modern DNNs. Here, we describe the ExStream algorithm for memory efficient rehearsal and compare it to alternatives. We find that full rehearsal can eliminate catastrophic forgetting in a variety of streaming learning settings, with ExStream performing well using far less memory and computation.</p></h5>
-    </div>
-        </div>
   
-  <!-- CVPR 2018 -->
-  <div class="row">
-  <div class="col-sm-8 col-sm-offset-2">
-    <h3><strong>CVPR 2018</strong>: <a href="http://openaccess.thecvf.com/content_cvpr_2018/papers/Cahill_Compassionately_Conservative_Balanced_CVPR_2018_paper.pdf" target="_blank" style="color:black">Compassionately Conservative Balanced Cuts for Image Segmentation</a></h3>
-	<h4>Nathan D. Cahill, <strong>Tyler L. Hayes</strong>, Renee T. Meinhold, John F. Hamilton</h4>
-	<h3><a href="https://arxiv.org/abs/1803.09903" target="_blank"><kbd>arXiv</kbd></a> <a href="http://openaccess.thecvf.com/content_cvpr_2018/papers/Cahill_Compassionately_Conservative_Balanced_CVPR_2018_paper.pdf" target="_blank"><kbd>Paper</kbd></a></h3> </div></div>
+	<!-- CVPR 2018 -->
+	<div class="row">
+		<div class="col-sm-8 col-sm-offset-2">
+			<h3><strong>CVPR 2018</strong>: Compassionately Conservative Balanced Cuts for Image Segmentation</h3>
+			<h4>Nathan D. Cahill, <strong>Tyler L. Hayes</strong>, Renee T. Meinhold, John F. Hamilton</h4>
+			<h3>
+				<a href="https://arxiv.org/abs/1803.09903" target="_blank"><button class="button">arXiv</button></a>
+				<a href="http://openaccess.thecvf.com/content_cvpr_2018/papers/Cahill_Compassionately_Conservative_Balanced_CVPR_2018_paper.pdf" target="_blank"><button class="button">Paper</button></a>
+			</h3>
+		</div>
+	</div>
 	
-	
-
     <div class="row">
-      <div class="col-sm-3 col-sm-offset-2">
-     <img src="images/cvpr_2018.PNG" alt="CVPR 2018" class="img-responsive"></img>
+		<div class="col-sm-3 col-sm-offset-2">
+			<img src="images/cvpr_2018.PNG" alt="CVPR 2018" class="img-responsive"></img>
+		</div>
+		<div class="col-sm-5">
+			<h5 class="h5-small"><p>The Normalized Cut (NCut) objective function, widely used in data clustering and image segmentation, quantifies the cost of graph partitioning in a way that biases clusters or segments that are balanced towards having lower values than unbalanced partitionings. However, this bias is so strong that it avoids any singleton partitions, even when vertices are very weakly connected to the rest of the graph. Motivated by the Buhler-Hein family of balanced cut costs, we propose the family of Compassionately Conservative Balanced (CCB) Cut costs, which are indexed by a parameter that can be used to strike a compromise between the desire to avoid too many singleton partitions and the notion that all partitions should be balanced. We show that CCB-Cut minimization can be relaxed into an orthogonally constrained lτ -minimization problem that coincides with the problem of computing Piecewise Flat Embeddings (PFE) for one particular index value, and we present an algorithm for solving the relaxed problem by iteratively minimizing a sequence of reweighted Rayleigh quotients (IRRQ). Using images from the BSDS500 database, we show that image segmentation based on CCB-Cut minimization provides better accuracy with respect to ground truth and greater variability in region size than NCut-based image segmentation.</p></h5>
+		</div>
     </div>
-      <div class="col-sm-5">
-       <h5 class="h5-small"><p>The Normalized Cut (NCut) objective function, widely used in data clustering and image segmentation, quantifies the cost of graph partitioning in a way that biases clusters or segments that are balanced towards having lower values than unbalanced partitionings. However, this bias is so strong that it avoids any singleton partitions, even when vertices are very weakly connected to the rest of the graph. Motivated by the Buhler-Hein family of balanced cut costs, we propose the family of Compassionately Conservative Balanced (CCB) Cut costs, which are indexed by a parameter that can be used to strike a compromise between the desire to avoid too many singleton partitions and the notion that all partitions should be balanced. We show that CCB-Cut minimization can be relaxed into an orthogonally constrained lτ -minimization problem that coincides with the problem of computing Piecewise Flat Embeddings (PFE) for one particular index value, and we present an algorithm for solving the relaxed problem by iteratively minimizing a sequence of reweighted Rayleigh quotients (IRRQ). Using images from the BSDS500 database, we show that image segmentation based on CCB-Cut minimization provides better accuracy with respect to ground truth and greater variability in region size than NCut-based image segmentation.</p></h5>
-    </div>
-        </div>
 
      <!-- AAAI 2018 -->
 	<div class="row">
-	<div class="col-sm-8 col-sm-offset-2">
-	<h3><strong>AAAI 2018</strong>: <a href="https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16410" target="_blank" style="color:black">Measuring Catastrophic Forgetting in Neural Networks</a></h3>
-	<h4>Ronald Kemker, Angelina Abitino, Marc McClure, <strong>Tyler L. Hayes</strong>, Christopher Kanan</h4>
-	<h3><a href="https://arxiv.org/abs/1708.02072" target="_blank"><kbd>arXiv</kbd></a> <a href="https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16410" target="_blank"><kbd>Paper</kbd></a></h3> </div></div>
+		<div class="col-sm-8 col-sm-offset-2">
+			<h3><strong>AAAI 2018</strong>: Measuring Catastrophic Forgetting in Neural Networks</h3>
+			<h4>Ronald Kemker, Angelina Abitino, Marc McClure, <strong>Tyler L. Hayes</strong>, Christopher Kanan</h4>
+			<h3>
+				<a href="https://arxiv.org/abs/1708.02072" target="_blank"><button class="button">arXiv</button></a>
+				<a href="https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16410" target="_blank"><button class="button">Paper</button></a>
+			</h3>
+		</div>
+	</div>
   
     <div class="row">
-      <div class="col-sm-3 col-sm-offset-2">
-     <img src="images/aaai_2018.png" alt="AAAI 2018" class="img-responsive"></img>
+		<div class="col-sm-3 col-sm-offset-2">
+			<img src="images/aaai_2018.png" alt="AAAI 2018" class="img-responsive"></img>
+		</div>
+		<div class="col-sm-5">
+			<h5 class="h5-small"><p>Deep neural networks are used in many state-of-the-art systems for machine perception. Once a network is trained to do a specific task, e.g., bird classification, it cannot easily be trained to do new tasks, e.g., incrementally learning to recognize additional bird species or learning an entirely different task such as flower recognition. When new tasks are added, typical deep neural networks are prone to catastrophically forgetting previous tasks. Networks that are capable of assimilating new information incrementally, much like how humans form new memories over time, will be more efficient than retraining the model from scratch each time a new task needs to be learned. There have been multiple attempts to develop schemes that mitigate catastrophic forgetting, but these methods have not been directly compared, the tests used to evaluate them vary considerably, and these methods have only been evaluated on small-scale problems (e.g., MNIST). In this paper, we introduce new metrics and benchmarks for directly comparing five different mechanisms designed to mitigate catastrophic forgetting in neural networks: regularization, ensembling, rehearsal, dual-memory, and sparse-coding. Our experiments on real-world images and sounds show that the mechanism(s) that are critical for optimal performance vary based on the incremental training paradigm and type of data being used, but they all demonstrate that the catastrophic forgetting problem has yet to be solved.</p></h5>
+		</div>
     </div>
-      <div class="col-sm-5">
-       <h5 class="h5-small"><p>Deep neural networks are used in many state-of-the-art systems for machine perception. Once a network is trained to do a specific task, e.g., bird classification, it cannot easily be trained to do new tasks, e.g., incrementally learning to recognize additional bird species or learning an entirely different task such as flower recognition. When new tasks are added, typical deep neural networks are prone to catastrophically forgetting previous tasks. Networks that are capable of assimilating new information incrementally, much like how humans form new memories over time, will be more efficient than retraining the model from scratch each time a new task needs to be learned. There have been multiple attempts to develop schemes that mitigate catastrophic forgetting, but these methods have not been directly compared, the tests used to evaluate them vary considerably, and these methods have only been evaluated on small-scale problems (e.g., MNIST). In this paper, we introduce new metrics and benchmarks for directly comparing five different mechanisms designed to mitigate catastrophic forgetting in neural networks: regularization, ensembling, rehearsal, dual-memory, and sparse-coding. Our experiments on real-world images and sounds show that the mechanism(s) that are critical for optimal performance vary based on the incremental training paradigm and type of data being used, but they all demonstrate that the catastrophic forgetting problem has yet to be solved.</p></h5>
-    </div>
-        </div>
 </div>
 
 
 <!-- Container (Publications) -->
-<div id="publications" class="container-fluid bg-orange">
-  <div class="row">
-    <div class="col-sm-10 col-sm-offset-1">
-      <h2>Publications</h2>
-	  <h4>Peer-Reviewed Conference Papers</h4>
-		<h5><ul style="list-style-type:circle">
-		  <li><strong>T.L. Hayes</strong>, N.D. Cahill, and C. Kanan. <a href="https://arxiv.org/abs/1809.05922" style="color:black">Memory efficient experience replay in streaming learning</a>. In: Proc. IEEE International Conference on Robotics and Automation (ICRA), 2019</li><br>
-		  <li>N.D. Cahill, <strong>T.L. Hayes</strong>, R.T. Meinhold, and J.F. Hamilton. <a href="http://openaccess.thecvf.com/content_cvpr_2018/papers/Cahill_Compassionately_Conservative_Balanced_CVPR_2018_paper.pdf" style="color:black">Compassionately conservative balanced cuts for image segmentation</a>. In: Proc. IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2018</li><br>
-		  <li>R. Kemker, M. McClure, A. Abitino, <strong>T.L. Hayes</strong>, and C. Kanan. <a href="https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16410" style="color:black">Measuring catastrophic forgetting in neural networks</a>. In: AAAI, 2018
-</li>
-		</ul></h5>
+<div id="publications" class="container-fluid section-publications">
+	<div class="row">
+		<div class="col-sm-8 col-sm-offset-2">
+			<h2>Publications</h2>
+			<h4>Peer-Reviewed Conference Papers</h4>
+			<h5><ul style="list-style-type:circle">
+				<li><strong>T.L. Hayes</strong>, N.D. Cahill, and C. Kanan. <a href="https://arxiv.org/abs/1809.05922" >Memory efficient experience replay for streaming learning</a>. In: Proc. IEEE International Conference on Robotics and Automation (ICRA), 2019</li>
+				<li>N.D. Cahill, <strong>T.L. Hayes</strong>, R.T. Meinhold, and J.F. Hamilton. <a href="http://openaccess.thecvf.com/content_cvpr_2018/papers/Cahill_Compassionately_Conservative_Balanced_CVPR_2018_paper.pdf" >Compassionately conservative balanced cuts for image segmentation</a>. In: Proc. IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2018</li>
+				<li>R. Kemker, M. McClure, A. Abitino, <strong>T.L. Hayes</strong>, and C. Kanan. <a href="https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16410" >Measuring catastrophic forgetting in neural networks</a>. In: AAAI, 2018</li>
+			</ul></h5>
 		
-	<h4>Conference Papers</h4>
-		<h5><ul style="list-style-type:circle">
-		  <li><strong>T.L. Hayes</strong>, R.T. Meinhold, J.F. Hamilton, and N.D. Cahill. <a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/10198/101980O/Piecewise-flat-embeddings-for-hyperspectral-image-analysis/10.1117/12.2262302.full" style="color:black">Piecewise flat embeddings for hyperspectral image analysis</a>. In: Proc. SPIE DCS Defense and Security: Algorithms and Technologies for Multispectral, Hyperspectral, and Ultraspectral Imagery XXIII, 2017</li><br>
-		  <li>R.T. Meinhold, <strong>T.L. Hayes</strong>, and N.D. Cahill. <a href="https://arxiv.org/abs/1612.06496" style="color:black">Efficiently computing piecewise flat embeddings for data clustering and image segmentation</a>. In: Proc. IEEE MIT Undergraduate Research and Technology Conference, 2016
-</li>
-		</ul></h5>
+			<h4>Conference Papers</h4>
+			<h5><ul style="list-style-type:circle">
+				<li><strong>T.L. Hayes</strong>, R.T. Meinhold, J.F. Hamilton, and N.D. Cahill. <a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/10198/101980O/Piecewise-flat-embeddings-for-hyperspectral-image-analysis/10.1117/12.2262302.full" >Piecewise flat embeddings for hyperspectral image analysis</a>. In: Proc. SPIE DCS Defense and Security: Algorithms and Technologies for Multispectral, Hyperspectral, and Ultraspectral Imagery XXIII, 2017</li>
+				<li>R.T. Meinhold, <strong>T.L. Hayes</strong>, and N.D. Cahill. <a href="https://arxiv.org/abs/1612.06496" >Efficiently computing piecewise flat embeddings for data clustering and image segmentation</a>. In: Proc. IEEE MIT Undergraduate Research and Technology Conference, 2016</li>
+			</ul></h5>
 		
 		<!-- 	<h4>Submitted/In-Review</h4>
 		<h5><ul style="list-style-type:circle">
@@ -403,19 +469,17 @@ Memory efficient experience replay for streaming learning</a>. In review at the 
 </li>
 		</ul></h5>-->
 		
-		<h4>Workshop Papers</h4>
-	<h5><ul style="list-style-type:circle">
-	  <li><strong>T.L. Hayes</strong>, R. Kemker, N.D. Cahill, and C. Kanan. <a href="http://openaccess.thecvf.com/content_cvpr_2018_workshops/w40/html/Hayes_New_Metrics_and_CVPR_2018_paper.html" style="color:black">New metrics and experimental paradigms for continual learning</a>. CVPR Workshop: Real-World Challenges and New Benchmarks for Deep Learning in Robotic Vision, Salt Lake City, UT, 2018
-</li>
-	</ul></h5>
+			<h4>Workshop Papers</h4>
+			<h5><ul style="list-style-type:circle">
+				<li><strong>T.L. Hayes</strong>, R. Kemker, N.D. Cahill, and C. Kanan. <a href="http://openaccess.thecvf.com/content_cvpr_2018_workshops/w40/html/Hayes_New_Metrics_and_CVPR_2018_paper.html" >New metrics and experimental paradigms for continual learning</a>. CVPR Workshop: Real-World Challenges and New Benchmarks for Deep Learning in Robotic Vision, Salt Lake City, UT, 2018</li>
+			</ul></h5>
 	
-	<h4>Thesis</h4>
-		<h5><ul style="list-style-type:circle">
-	  <li><strong>T.L. Hayes</strong>. <a href="http://scholarworks.rit.edu/theses/9409/" style="color:black">Compassionately conservative normalized cuts for image segmentation</a>. M.S. Thesis, Rochester Institute of Technology, 2017
-</li>
-	</ul></h5>
-    </div>
-  </div>
+			<h4>Thesis</h4>
+			<h5><ul style="list-style-type:circle">
+				<li><strong>T.L. Hayes</strong>. <a href="http://scholarworks.rit.edu/theses/9409/" >Compassionately conservative normalized cuts for image segmentation</a>. M.S. Thesis, Rochester Institute of Technology, 2017</li>
+			</ul></h5>
+		</div>
+	</div>
 </div>
 
 

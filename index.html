@@ -1,363 +1,428 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-	<title>Tyler Hayes</title>
-	<description>Tyler Hayes Personal Website</description>
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<meta name="keywords" content="tyler, hayes, rit, rochester institute of technology, new york, computer vision, deep-learning, machine-learning, machine learning, deep learning, artificial intelligence, AI, segmentation, image, graph, manifold, math, RIT, Rochester, rochester, lifelong learning, continual learning">
-	<meta name="author" content="Tyler Hayes">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
-	<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <title>Tyler Hayes</title>
+    <description>Tyler Hayes Personal Website</description>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="keywords" content="tyler, hayes, rit, rochester institute of technology, new york, computer vision, deep-learning, machine-learning, machine learning, deep learning, artificial intelligence, AI, segmentation, image, graph, manifold, math, RIT, Rochester, rochester, lifelong learning, continual learning">
+    <meta name="author" content="Tyler Hayes">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet" type="text/css">
+    <link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
 
-	<!-- Global site tag (gtag.js) - Google Analytics -->
-	<script async src="https://www.googletagmanager.com/gtag/js?id=UA-151327506-1"></script>
-	<script>
-	window.dataLayer = window.dataLayer || [];
-	function gtag(){ dataLayer.push(arguments); }
-	gtag('js', new Date());
+    <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-151327506-1"></script>
+    <script>
+        window.dataLayer = window.dataLayer || [];
 
-	gtag('config', 'UA-151327506-1');
-	</script>
+        function gtag() {
+            dataLayer.push(arguments);
+        }
+        gtag('js', new Date());
 
-	<script>
-	/**
-	* Function that registers a click on an outbound link in Analytics.
-	* This function takes a valid URL string as an argument, and uses that URL string
-	* as the event label. Setting the transport method to 'beacon' lets the hit be sent
-	* using 'navigator.sendBeacon' in browser that support it.
-	*/
-	var getOutboundLink = function(url){
-		gtag('event', 'click', {
-			'event_category': 'outbound',
-			'event_label': url,
-			'transport_type': 'beacon',
-			'event_callback': function(){ document.location = url; }
-		});
-	}
-	</script>
-	
-	<style>
-.newflag {
-  background-color: #C0B283;
-  color: #ffffff;
-  padding: 2px 5px;
-  border-radius: 5px; 
-  border: 2px solid #C0B283;
-	font: 600 16px Montserrat, sans-serif;
-	font-family: Montserrat, sans-serif;
-}
-</style>
+        gtag('config', 'UA-151327506-1');
+    </script>
 
-	<style>
-	body {
-		font: 400 15px Montserrat, sans-serif;
-		font-family: Montserrat, sans-serif;
-		line-height: 1.8;
-		color: #818181;
-	}
-	img {
-		width: 100%;
-		height: auto;
-	}
-	h2 {
-		font-size: 24px;
-		text-transform: uppercase;
-		font-weight: 600;
-		margin-bottom: 20px;
-		text-align: center;
-		font-family: Montserrat, sans-serif;
-		letter-spacing: 4px;
-	}
-	h3 {
-		font-size: 22px;
-		font-weight: 400;
-		margin-bottom: 20px;
-		text-align: left;
-	}
-	h4 {
-		font-size: 19px;
-		line-height: 1.375em;
-		font-weight: 400;
-		margin-bottom: 20px;
-		text-align: left;
-	}  
-	h5 {
-		font-size: 16px;
-		line-height: 1.375em;
-		font-weight: 400;
-		margin-bottom: 15px;
-	}  
-	h6 {
-		font-size: 15px;
-		line-height: 1.375em;
-		font-weight: 400;
-		margin-bottom: 14px;
-		text-align: right;
-	}  
-	.jumbotron {
-		background-image: url("images/bulbs.jpg");
-		background-size: 142% auto;
-		background-align: center;
-		padding: 100px 25px;
-		font-family: Montserrat, sans-serif;
-	}
-	.container-fluid {
-		padding: 60px 50px;
-	}
-	.section-navbar {
-		color: #C0B283;
-		background-color: #FFFFFF;
-	}
-	.section-default {
-		color: #373737;
-		background-color: #F4F4F4;
-	}
-	.section-about-me, .section-about-me h4, .section-about-me a {
-		color: #373737;
-		background-color: #F4F4F4;
-		text-align: justify;
-	}
-	.section-recent-news {
-		color: #373737;
-		background-color: #ede6de;
-	}
-	.section-research {
-		color: #373737;
-		background-color: #F4F4F4;
-		text-align: justify;
-	}
-	.section-research h3 {
-		text-align: center;
-	}
-	.section-research h4 {
-		text-align: center;
-	}
-	.section-publications, .section-publications a {
-		color: #373737;
-		background-color: #ede6de;
-		text-align: justify;
-	}
-	.logo {
-		color: #f4511e;
-		font-size: 200px;
-	}
-	.thumbnail {
-		padding: 0 0 15px 0;
-		border: none;
-		border-radius: 0;
-	}
-	.thumbnail2 {
-		width: 60px;
-		height: auto;
-		margin-bottom: 10px;
-	}
-	.carousel-control.right, .carousel-control.left {
-		background-image: none;
-		color: #f4511e;
-	}
-	.carousel-indicators li {
-		border-color: #f4511e;
-	}
-	.carousel-indicators li.active {
-		background-color: #f4511e;
-	}
-	.item h4 {
-		font-size: 19px;
-		line-height: 1.375em;
-		font-weight: 400;
-		font-style: italic;
-		margin: 70px 0;
-	}
-	.item span {
-		font-style: normal;
-	}
-	.panel {
-		border: 1px solid #f4511e; 
-		border-radius:0 !important;
-		transition: box-shadow 0.5s;
-	}
-	.panel:hover {
-		box-shadow: 5px 0px 40px rgba(0,0,0, .2);
-	}
-	.panel-footer .btn:hover {
-		border: 1px solid #f4511e;
-		background-color: #fff !important;
-		color: #f4511e;
-	}
-	.panel-heading {
-		color: #fff !important;
-		background-color: #f4511e !important;
-		padding: 25px;
-		border-bottom: 1px solid transparent;
-		border-top-left-radius: 0px;
-		border-top-right-radius: 0px;
-		border-bottom-left-radius: 0px;
-		border-bottom-right-radius: 0px;
-	}
-	.panel-footer {
-		background-color: white !important;
-	}
-	.panel-footer h3 {
-		font-size: 32px;
-		font-weight: 600;
-		margin-bottom: 30px;
-	}
-	.panel-footer h4 {
-		font-size: 14px;
-	}
-	.panel-footer .btn {
-		margin: 15px 0;
-	}
-	.navbar {
-		margin-bottom: 0;
-		z-index: 9999;
-		border: 0;
-		font-size: 12px !important;
-		line-height: 1.42857143 !important;
-		letter-spacing: 4px;
-		border-radius: 0;
-		font-family: Montserrat, sans-serif;
-	}
-	.navbar li a, .navbar .navbar-brand {
-		font-family: Montserrat, sans-serif;
-	}
-	.navbar-nav li a:hover, .navbar-nav li.active a {
-		background-color: #C0B283 !important;
-		color: #FFFFFF !important;
-		transition: 0.3s;
-	}
-	.navbar-default .navbar-toggle {
-		border-color: transparent;
-		color: #fff !important;
-	}
-	footer {
-		background-color: #ffffff;
-	}
-	footer .glyphicon {
-		font-size: 20px;
-		margin-bottom: 20px;
-		color: #C0B283;
-	}
-	.slideanim {visibility:hidden;}
-	.slide {
-		animation-name: slide;
-		-webkit-animation-name: slide;
-		animation-duration: 1s;
-		-webkit-animation-duration: 1s;
-		visibility: visible;
-	}
-	@keyframes slide {
-		0% {
-			opacity: 0;
-			transform: translateY(70%);
-		} 
-		100% {
-			opacity: 1;
-			transform: translateY(0%);
-		}
-	}
-	@-webkit-keyframes slide {
-		0% {
-			opacity: 0;
-			-webkit-transform: translateY(70%);
-		} 
-		100% {
-			opacity: 1;
-			-webkit-transform: translateY(0%);
-		}
-	}
-	@media screen and (max-width: 768px) {
-		.col-sm-4 {
-			text-align: center;
-			margin: 25px 0;
-		}
-		.btn-lg {
-			width: 100%;
-			margin-bottom: 35px;
-		}
-	}
-	@media screen and (max-width: 480px) {
-		.logo {
-			font-size: 150px;
-		}
-	}
-	.external-link-icon {
-		float: left;
-		margin: 0pt 5pt;
-		width:50pt;
-		height:50pt;
-		opacity: 1;
-	}
-	.external-link-icon img {
-		transition: 0.3s;
-		border-radius: 50%;
-	}
-	.external-link-icon img:hover {
-		background-color: #C0B283;
-		transition: 0.3s;
-		border-radius: 50%;
-	}
-	.external-link-container {
-		text-align:center;
-		width:100%;
-		height:60pt;
-	}
-	.external-link-center-wrapper {
-		margin: 20px auto auto;
-		width: 240pt;
-		height: 60pt;
-	}
+    <script>
+        /**
+         * Function that registers a click on an outbound link in Analytics.
+         * This function takes a valid URL string as an argument, and uses that URL string
+         * as the event label. Setting the transport method to 'beacon' lets the hit be sent
+         * using 'navigator.sendBeacon' in browser that support it.
+         */
+        var getOutboundLink = function(url) {
+            gtag('event', 'click', {
+                'event_category': 'outbound',
+                'event_label': url,
+                'transport_type': 'beacon',
+                'event_callback': function() {
+                    document.location = url;
+                }
+            });
+        }
+    </script>
 
-	.button {
-		background-color: #373737;
-		border: none;
-		color: white;
-		padding: 8px 32px;
-		text-align: center;
-		font-size: 18px;
-		margin: 4px 2px;
-		transition: 0.3s;
-		display: inline-block;
-		text-decoration: none;
-		cursor: pointer;
-		border-radius: 5px;
-	}
-	.button:hover {
-		background-color: #C0B283;
-		color: #ffffff;
-	}
-	</style>
+    <style>
+        .newflag {
+            background-color: #C0B283;
+            color: #ffffff;
+            padding: 2px 5px;
+            border-radius: 5px;
+            border: 2px solid #C0B283;
+            font: 600 16px Montserrat, sans-serif;
+            font-family: Montserrat, sans-serif;
+        }
+    </style>
+
+    <style>
+        body {
+            font: 400 15px Montserrat, sans-serif;
+            font-family: Montserrat, sans-serif;
+            line-height: 1.8;
+            color: #818181;
+        }
+        
+        img {
+            width: 100%;
+            height: auto;
+        }
+        
+        h2 {
+            font-size: 24px;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-bottom: 20px;
+            text-align: center;
+            font-family: Montserrat, sans-serif;
+            letter-spacing: 4px;
+        }
+        
+        h3 {
+            font-size: 22px;
+            font-weight: 400;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        
+        h4 {
+            font-size: 19px;
+            line-height: 1.375em;
+            font-weight: 400;
+            margin-bottom: 20px;
+            text-align: left;
+        }
+        
+        h5 {
+            font-size: 16px;
+            line-height: 1.375em;
+            font-weight: 400;
+            margin-bottom: 15px;
+        }
+        
+        h6 {
+            font-size: 15px;
+            line-height: 1.375em;
+            font-weight: 400;
+            margin-bottom: 14px;
+            text-align: right;
+        }
+        
+        .jumbotron {
+            background-image: url("images/bulbs.jpg");
+            background-size: 142% auto;
+            background-align: center;
+            padding: 100px 25px;
+            font-family: Montserrat, sans-serif;
+        }
+        
+        .container-fluid {
+            padding: 60px 50px;
+        }
+        
+        .section-navbar {
+            color: #C0B283;
+            background-color: #FFFFFF;
+        }
+        
+        .section-default {
+            color: #373737;
+            background-color: #F4F4F4;
+        }
+        
+        .section-about-me,
+        .section-about-me h4,
+        .section-about-me a {
+            color: #373737;
+            background-color: #F4F4F4;
+            text-align: justify;
+        }
+        
+        .section-recent-news {
+            color: #373737;
+            background-color: #ede6de;
+        }
+        
+        .section-research {
+            color: #373737;
+            background-color: #F4F4F4;
+            text-align: justify;
+        }
+        
+        .section-research h3 {
+            text-align: center;
+        }
+        
+        .section-research h4 {
+            text-align: center;
+        }
+        
+        .section-publications,
+        .section-publications a {
+            color: #373737;
+            background-color: #ede6de;
+            text-align: justify;
+        }
+        
+        .logo {
+            color: #f4511e;
+            font-size: 200px;
+        }
+        
+        .thumbnail {
+            padding: 0 0 15px 0;
+            border: none;
+            border-radius: 0;
+        }
+        
+        .thumbnail2 {
+            width: 60px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+        
+        .carousel-control.right,
+        .carousel-control.left {
+            background-image: none;
+            color: #f4511e;
+        }
+        
+        .carousel-indicators li {
+            border-color: #f4511e;
+        }
+        
+        .carousel-indicators li.active {
+            background-color: #f4511e;
+        }
+        
+        .item h4 {
+            font-size: 19px;
+            line-height: 1.375em;
+            font-weight: 400;
+            font-style: italic;
+            margin: 70px 0;
+        }
+        
+        .item span {
+            font-style: normal;
+        }
+        
+        .panel {
+            border: 1px solid #f4511e;
+            border-radius: 0 !important;
+            transition: box-shadow 0.5s;
+        }
+        
+        .panel:hover {
+            box-shadow: 5px 0px 40px rgba(0, 0, 0, .2);
+        }
+        
+        .panel-footer .btn:hover {
+            border: 1px solid #f4511e;
+            background-color: #fff !important;
+            color: #f4511e;
+        }
+        
+        .panel-heading {
+            color: #fff !important;
+            background-color: #f4511e !important;
+            padding: 25px;
+            border-bottom: 1px solid transparent;
+            border-top-left-radius: 0px;
+            border-top-right-radius: 0px;
+            border-bottom-left-radius: 0px;
+            border-bottom-right-radius: 0px;
+        }
+        
+        .panel-footer {
+            background-color: white !important;
+        }
+        
+        .panel-footer h3 {
+            font-size: 32px;
+            font-weight: 600;
+            margin-bottom: 30px;
+        }
+        
+        .panel-footer h4 {
+            font-size: 14px;
+        }
+        
+        .panel-footer .btn {
+            margin: 15px 0;
+        }
+        
+        .navbar {
+            margin-bottom: 0;
+            z-index: 9999;
+            border: 0;
+            font-size: 12px !important;
+            line-height: 1.42857143 !important;
+            letter-spacing: 4px;
+            border-radius: 0;
+            font-family: Montserrat, sans-serif;
+        }
+        
+        .navbar li a,
+        .navbar .navbar-brand {
+            font-family: Montserrat, sans-serif;
+        }
+        
+        .navbar-nav li a:hover,
+        .navbar-nav li.active a {
+            background-color: #C0B283 !important;
+            color: #FFFFFF !important;
+            transition: 0.3s;
+        }
+        
+        .navbar-default .navbar-toggle {
+            border-color: transparent;
+            color: #fff !important;
+        }
+        
+        footer {
+            background-color: #ffffff;
+        }
+        
+        footer .glyphicon {
+            font-size: 20px;
+            margin-bottom: 20px;
+            color: #C0B283;
+        }
+        
+        .slideanim {
+            visibility: hidden;
+        }
+        
+        .slide {
+            animation-name: slide;
+            -webkit-animation-name: slide;
+            animation-duration: 1s;
+            -webkit-animation-duration: 1s;
+            visibility: visible;
+        }
+        
+        @keyframes slide {
+            0% {
+                opacity: 0;
+                transform: translateY(70%);
+            }
+            100% {
+                opacity: 1;
+                transform: translateY(0%);
+            }
+        }
+        
+        @-webkit-keyframes slide {
+            0% {
+                opacity: 0;
+                -webkit-transform: translateY(70%);
+            }
+            100% {
+                opacity: 1;
+                -webkit-transform: translateY(0%);
+            }
+        }
+        
+        @media screen and (max-width: 768px) {
+            .col-sm-4 {
+                text-align: center;
+                margin: 25px 0;
+            }
+            .btn-lg {
+                width: 100%;
+                margin-bottom: 35px;
+            }
+        }
+        
+        @media screen and (max-width: 480px) {
+            .logo {
+                font-size: 150px;
+            }
+        }
+        
+        .external-link-icon {
+            float: left;
+            margin: 0pt 5pt;
+            width: 50pt;
+            height: 50pt;
+            opacity: 1;
+        }
+        
+        .external-link-icon img {
+            transition: 0.3s;
+            border-radius: 50%;
+        }
+        
+        .external-link-icon img:hover {
+            background-color: #C0B283;
+            transition: 0.3s;
+            border-radius: 50%;
+        }
+        
+        .external-link-container {
+            text-align: center;
+            width: 100%;
+            height: 60pt;
+        }
+        
+        .external-link-center-wrapper {
+            margin: 20px auto auto;
+            width: 240pt;
+            height: 60pt;
+        }
+        
+        .button {
+            background-color: #373737;
+            border: none;
+            color: white;
+            padding: 8px 32px;
+            text-align: center;
+            font-size: 18px;
+            margin: 4px 2px;
+            transition: 0.3s;
+            display: inline-block;
+            text-decoration: none;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        
+        .button:hover {
+            background-color: #C0B283;
+            color: #ffffff;
+        }
+    </style>
 </head>
+
 <body id="myPage" data-spy="scroll" data-target=".navbar" data-offset="60" class="section-default">
 
-<nav class="navbar navbar-default navbar-fixed-top section-navbar">
-  <div class="container">
-    <div class="navbar-header">
-		<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>
-			<span class="icon-bar"></span>                        
-		</button>
-		<a class="navbar-brand" href="#myPage">Tyler Hayes</a>
-    </div>
-    <div class="collapse navbar-collapse" id="myNavbar">
-      <ul class="nav navbar-nav navbar-right">
-        <li><a href="#about">ABOUT</a></li>
-        <li><a href="#recent">RECENT</a></li>
-        <li><a href="#research">RESEARCH</a></li>
-		<li><a href="#publications">PUBLICATIONS</a></li>
-        <li data-toggle="collapse" data-target=".navbar-collapse.in"><a href="data/Tyler_Hayes_CV.pdf" onclick="getOutboundLink('data/Tyler_Hayes_CV.pdf'); return false;" target="_blank">CV</a></li>
-        </h1>
-    </div>
-  </div>
-</nav>
+    <nav class="navbar navbar-default navbar-fixed-top section-navbar">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#myPage">Tyler Hayes</a>
+            </div>
+            <div class="collapse navbar-collapse" id="myNavbar">
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#about">ABOUT</a></li>
+                    <li><a href="#recent">RECENT</a></li>
+                    <li><a href="#research">RESEARCH</a></li>
+                    <li><a href="#publications">PUBLICATIONS</a></li>
+                    <li data-toggle="collapse" data-target=".navbar-collapse.in"><a href="data/Tyler_Hayes_CV.pdf" onclick="getOutboundLink('data/Tyler_Hayes_CV.pdf'); return false;" target="_blank">CV</a></li>
+                    </h1>
+            </div>
+        </div>
+    </nav>
 
-<div class="jumbotron text-center">
-  <h1>Tyler Hayes<br>
+    <div class="jumbotron text-center">
+        <h1>Tyler Hayes<br>
   	<div class = "external-link-container">
 	  <div class="external-link-center-wrapper">
 	    <div class = "external-link-icon">
@@ -383,10 +448,8 @@
 	  </div>
 	</div>
 </div>
-     
-    
-  </form>
 
+  </form>
 
 <!-- Container (About Section) -->
 <div id="about" class="container-fluid section-about-me">
@@ -423,7 +486,6 @@ rate) </h4>
   </div>
 </div>
 
-
 <!-- Container (Research Section) -->
 <div id="research" class="container-fluid section-research">
 	<div class="row">
@@ -431,7 +493,7 @@ rate) </h4>
 			<h2>Research</h2>
 		</div>
 	</div>
-	
+
 	<!-- arXiv Preprint 2019 -->
 	<div class="row">
 		<div class="col-sm-8 col-sm-offset-2">
@@ -452,7 +514,7 @@ rate) </h4>
 			<h5 class="h5-small"><p>In lifelong machine learning, a robotic agent must be incrementally updated with new knowledge, instead of having distinct train and deployment phases. Conventional neural networks are often used for interpreting sensor data, however, if they are updated on non-stationary data streams, they suffer from catastrophic forgetting, with new learning overwriting past knowledge. A common remedy is replay, which involves mixing old examples with new ones. For incrementally training convolutional neural network models, prior work has enabled replay by storing raw images, but this is memory intensive and not ideal for embedded agents. Here, we propose REMIND, a tensor quantization approach that enables efficient replay with tensors. Unlike other methods, REMIND is trained in a streaming manner, meaning it learns one example at a time rather than in large batches containing multiple classes. Our approach achieves state-of-the-art results for incremental class learning on the ImageNet-1K dataset. We also probe REMIND's robustness to different data ordering schemes using the CORe50 streaming dataset. We demonstrate REMIND's generality by pioneering multi-modal incremental learning for visual question answering (VQA), which cannot be readily done with comparison models. We establish strong baselines on the CLEVR and TDIUC datasets for VQA. The generality of REMIND for multi-modal tasks can enable robotic agents to learn about their visual environment using natural language understanding in an interactive way.</p></h5>
 		</div>
     </div>
-	
+
 	<!-- CVPRW 2020 -->
 	<div class="row">
 		<div class="col-sm-8 col-sm-offset-2">
@@ -474,7 +536,7 @@ rate) </h4>
 			<h5 class="h5-small"><p>When a robot acquires new information, ideally it would immediately be capable of using that information to understand its environment. While deep neural networks are now widely used by robots for inferring semantic information, conventional neural networks suffer from catastrophic forgetting when they are incrementally updated, with new knowledge overwriting established representations. While a variety of approaches have been developed that attempt to mitigate catastrophic forgetting in the incremental batch learning scenario, in which an agent learns a large collection of labeled samples at once, streaming learning has been much less studied in the robotics and deep learning communities. In streaming learning, an agent learns instances one-by-one and can be tested at any time. Here, we revisit streaming linear discriminant analysis, which has been widely used in the data mining research community. By combining streaming linear discriminant analysis with deep learning, we are able to outperform both incremental batch learning and streaming learning algorithms on both ImageNet-1K and CORe50.</p></h5>
 		</div>
     </div>
-	
+
 		<!-- arXiv Preprint 2019 -->
 	<div class="row">
 		<div class="col-sm-8 col-sm-offset-2">
@@ -494,7 +556,7 @@ rate) </h4>
 			<h5 class="h5-small"><p>Supervised classification methods often assume the train and test data distributions are the same and that all classes in the test set are present in the training set. However, deployed classifiers often require the ability to recognize inputs from outside the training set as unknowns. This problem has been studied under multiple paradigms including out-of-distribution detection and open set recognition. For convolutional neural networks, there have been two major approaches: 1) inference methods to separate knowns from unknowns and 2) feature space regularization strategies to improve model robustness to outlier inputs. There has been little effort to explore the relationship between the two approaches and directly compare performance on anything other than small-scale datasets that have at most 100 categories. Using ImageNet-1K and Places-434, we identify novel combinations of regularization and specialized inference methods that perform best across multiple outlier detection problems of increasing difficulty level. We found that input perturbation and temperature scaling yield the best performance on large scale datasets regardless of the feature space regularization strategy. Improving the feature space by regularizing against a background class can be helpful if an appropriate background class can be found, but this is impractical for large scale image classification datasets.</p></h5>
 		</div>
     </div>
-  
+
     <!-- ICRA 2019 -->
 	<div class="row">
 		<div class="col-sm-8 col-sm-offset-2">
@@ -517,7 +579,7 @@ rate) </h4>
 			<h5 class="h5-small"><p>In supervised machine learning, an agent is typically trained once and then deployed. While this works well for static settings, robots often operate in changing environments and must quickly learn new things from data streams. In this paradigm, known as streaming learning, a learner is trained online, in a single pass, from a data stream that cannot be assumed to be independent and identically distributed (iid). Streaming learning will cause conventional deep neural networks (DNNs) to fail for two reasons: 1) they need multiple passes through the entire dataset; and 2) non-iid data will cause catastrophic forgetting. An old fix to both of these issues is rehearsal. To learn a new example, rehearsal mixes it with previous examples, and then this mixture is used to update the DNN. Full rehearsal is slow and memory intensive because it stores all previously observed examples, and its effectiveness for preventing catastrophic forgetting has not been studied in modern DNNs. Here, we describe the ExStream algorithm for memory efficient rehearsal and compare it to alternatives. We find that full rehearsal can eliminate catastrophic forgetting in a variety of streaming learning settings, with ExStream performing well using far less memory and computation.</p></h5>
 		</div>
     </div>
-	
+
 	<!-- CVPRW 2018 -->
 			</ul></h5>
 	<div class="row">
@@ -530,7 +592,7 @@ rate) </h4>
 			</h3>
 		</div>
 	</div>
-	
+
     <div class="row">
 		<div class="col-sm-3 col-sm-offset-2">
 			<img src="images/cvprw_2018.png" alt="CVPRW 2018" class="img-responsive"></img>
@@ -540,7 +602,7 @@ rate) </h4>
 </p></h5>
 		</div>
     </div>
-  
+
 	<!-- CVPR 2018 -->
 	<div class="row">
 		<div class="col-sm-8 col-sm-offset-2">
@@ -552,7 +614,7 @@ rate) </h4>
 			</h3>
 		</div>
 	</div>
-	
+
     <div class="row">
 		<div class="col-sm-3 col-sm-offset-2">
 			<img src="images/cvpr_2018.PNG" alt="CVPR 2018" class="img-responsive"></img>
@@ -573,7 +635,7 @@ rate) </h4>
 			</h3>
 		</div>
 	</div>
-  
+
     <div class="row">
 		<div class="col-sm-3 col-sm-offset-2">
 			<img src="images/aaai_2018.png" alt="AAAI 2018" class="img-responsive"></img>
@@ -583,7 +645,6 @@ rate) </h4>
 		</div>
     </div>
 </div>
-
 
 <!-- Container (Publications) -->
 <div id="publications" class="container-fluid section-publications">
@@ -596,25 +657,25 @@ rate) </h4>
 				<li>N.D. Cahill, <strong>T.L. Hayes</strong>, R.T. Meinhold, and J.F. Hamilton. <a href="http://openaccess.thecvf.com/content_cvpr_2018/html/Cahill_Compassionately_Conservative_Balanced_CVPR_2018_paper.html" onclick="getOutboundLink('http://openaccess.thecvf.com/content_cvpr_2018/html/Cahill_Compassionately_Conservative_Balanced_CVPR_2018_paper.html'); return false;">Compassionately conservative balanced cuts for image segmentation</a>. In: Proc. IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2018</li>
 				<li>R. Kemker, M. McClure, A. Abitino, <strong>T.L. Hayes</strong>, and C. Kanan. <a href="https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16410" onclick="getOutboundLink('https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16410'); return false;">Measuring catastrophic forgetting in neural networks</a>. In: AAAI, 2018</li>
 			</ul></h5>
-			
+
 			<h4>Peer-Reviewed Workshop Papers</h4>
 			<h5><ul style="list-style-type:circle">
 			<li><strong>T.L. Hayes</strong> and C. Kanan. <a href="https://arxiv.org/abs/1909.01520" onclick="getOutboundLink('https://arxiv.org/abs/1909.01520'); return false;">Lifelong machine learning with deep streaming linear discriminant analysis</a>. CVPR Workshop: Continual Learning in Computer Vision, 2020</li>
 				<li><strong>T.L. Hayes</strong>, R. Kemker, N.D. Cahill, and C. Kanan. <a href="http://openaccess.thecvf.com/content_cvpr_2018_workshops/w40/html/Hayes_New_Metrics_and_CVPR_2018_paper.html" onclick="getOutboundLink('http://openaccess.thecvf.com/content_cvpr_2018_workshops/w40/html/Hayes_New_Metrics_and_CVPR_2018_paper.html'); return false;">New metrics and experimental paradigms for continual learning</a>. CVPR Workshop: Real-World Challenges and New Benchmarks for Deep Learning in Robotic Vision, 2018</li>
 			</ul></h5>
-			
+
 			<h4>Papers Under Review</h4>
 			<h5><ul style="list-style-type:circle">
 			<li><strong>T.L. Hayes*</strong>, K. Kafle*, R. Shrestha*, M. Acharya, and C. Kanan. <a href="https://arxiv.org/abs/1910.02509" onclick="getOutboundLink('https://arxiv.org/abs/1910.02509'); return false;">REMIND your neural network to prevent catastrophic forgetting</a>. 2020</li>
 				<li>R. Roady, <strong>T.L. Hayes</strong>, R. Kemker, A. Gonzales, and C. Kanan. <a href="https://arxiv.org/abs/1910.14034" onclick="getOutboundLink('https://arxiv.org/abs/1910.14034'); return false;">Are out-of-distribution detection methods effective on large-scale datasets?</a>. 2019</li>
 			</ul></h5>
-		
+
 			<h4>Conference Papers</h4>
 			<h5><ul style="list-style-type:circle">
 				<li><strong>T.L. Hayes</strong>, R.T. Meinhold, J.F. Hamilton, and N.D. Cahill. <a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/10198/101980O/Piecewise-flat-embeddings-for-hyperspectral-image-analysis/10.1117/12.2262302.full" onclick="getOutboundLink('https://www.spiedigitallibrary.org/conference-proceedings-of-spie/10198/101980O/Piecewise-flat-embeddings-for-hyperspectral-image-analysis/10.1117/12.2262302.full'); return false;">Piecewise flat embeddings for hyperspectral image analysis</a>. In: Proc. SPIE DCS Defense and Security: Algorithms and Technologies for Multispectral, Hyperspectral, and Ultraspectral Imagery XXIII, 2017</li>
 				<li>R.T. Meinhold, <strong>T.L. Hayes</strong>, and N.D. Cahill. <a href="https://arxiv.org/abs/1612.06496" onclick="getOutboundLink('https://arxiv.org/abs/1612.06496'); return false;">Efficiently computing piecewise flat embeddings for data clustering and image segmentation</a>. In: Proc. IEEE MIT Undergraduate Research and Technology Conference, 2016</li>
 			</ul></h5>
-	
+
 			<h4>Thesis</h4>
 			<h5><ul style="list-style-type:circle">
 				<li><strong>T.L. Hayes</strong>. <a href="http://scholarworks.rit.edu/theses/9409/" onclick="getOutboundLink('http://scholarworks.rit.edu/theses/9409/'); return false;">Compassionately conservative normalized cuts for image segmentation</a>. M.S. Thesis, Rochester Institute of Technology, 2017</li>
@@ -622,7 +683,6 @@ rate) </h4>
 		</div>
 	</div>
 </div>
-
 
 <footer class="container-fluid text-center">
   <a href="#myPage" title="To Top">
@@ -647,13 +707,13 @@ $(document).ready(function(){
       $('html, body').animate({
         scrollTop: $(hash).offset().top
       }, 900, function(){
-   
+
         // Add hash (#) to URL when done scrolling (default click behavior)
         window.location.hash = hash;
       });
     } // End if
   });
-  
+
   $(window).scroll(function() {
     $(".slideanim").each(function(){
       var pos = $(this).offset().top;

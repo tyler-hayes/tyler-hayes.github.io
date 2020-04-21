@@ -39,6 +39,18 @@
 		});
 	}
 	</script>
+	
+	<style>
+.newflag {
+  background-color: #C0B283;
+  color: #ffffff;
+  padding: 2px 5px;
+  border-radius: 5px; 
+  border: 2px solid #C0B283;
+	font: 600 16px Montserrat, sans-serif;
+	font-family: Montserrat, sans-serif;
+}
+</style>
 
 	<style>
 	body {
@@ -396,6 +408,9 @@ Previously, I earned a BS in Applied Mathematics from RIT in 2014 and an MS in A
   <div class="row">
     <div class="col-sm-8 col-sm-offset-2">
       <h2>Recent News</h2>
+			<h4><strong>Apr 2020:</strong> <span class="newflag">NEW!</span> My research journey was featured in an <a href="https://www.rit.edu/science/news/student-student-artificial-intelligencemachine-learning?fbclid=IwAR1SMfMZA6ryy8C31YATz5CHOOfDnybFgdnfnfyMO74wYGXod7pqXzJcE9I" onclick="getOutboundLink('https://www.rit.edu/science/news/student-student-artificial-intelligencemachine-learning?fbclid=IwAR1SMfMZA6ryy8C31YATz5CHOOfDnybFgdnfnfyMO74wYGXod7pqXzJcE9I'); return false;">RIT News article</a>!</h4>
+			<h4><strong>Apr 2020:</strong> <span class="newflag">NEW!</span> Our extended abstract <a href="https://arxiv.org/abs/1910.02509" onclick="getOutboundLink('https://arxiv.org/abs/1910.02509'); return false;">"REMIND Your Neural Network to Prevent Catastrophic Forgetting"</a> was accepted to the CVPR 2020 Workshop on Women in Computer Vision (WiCV)! </h4>
+			<h4><strong>Apr 2020:</strong> <span class="newflag">NEW!</span> Our paper <a href="https://arxiv.org/abs/1909.01520" onclick="getOutboundLink('https://arxiv.org/abs/1909.01520'); return false;">"Lifelong Machine Learning with Deep Streaming Linear Discriminant Analysis"</a> was accepted to the CVPR 2020 Workshop on Continual Learning! </h4>
 			<h4><strong>Apr 2019:</strong> Gave an invited talk at the RIT <a href="https://www.rit.edu/chai/" onclick="getOutboundLink('https://www.rit.edu/chai/'); return false;">CHAI</a> AI Seminar Series on "Memory Efficient Experience Replay for Mitigating Catastrophic Forgetting."</h4>	
 	       <h4><strong>Jan 2019:</strong> Our paper <a href="https://ieeexplore.ieee.org/document/8793982" onclick="getOutboundLink('https://ieeexplore.ieee.org/document/8793982'); return false;">"Memory Efficient Experience Replay for Streaming Learning"</a> was accepted for poster presentation at ICRA 2019! (44.0% acceptance rate) </h4>
            <h4><strong>Feb 2018:</strong> Our paper <a href="http://openaccess.thecvf.com/content_cvpr_2018/html/Cahill_Compassionately_Conservative_Balanced_CVPR_2018_paper.html" onclick="getOutboundLink('http://openaccess.thecvf.com/content_cvpr_2018/html/Cahill_Compassionately_Conservative_Balanced_CVPR_2018_paper.html'); return false;">"Compassionately Conservative Balanced Cuts for Image Segmentation"</a> was accepted for poster presentation at CVPR 2018! (29.6% acceptance rate) </h4>
@@ -420,27 +435,7 @@ rate) </h4>
 	<!-- arXiv Preprint 2019 -->
 	<div class="row">
 		<div class="col-sm-8 col-sm-offset-2">
-			<h3><strong>arXiv 2019</strong>: Are Out-of-Distribution Detection Methods Effective on Large-Scale Datasets?</h3>
-			<h4>Ryne Roady, <strong>Tyler L. Hayes</strong>, Ronald Kemker, Ayesha Gonzales, Christopher Kanan</h4>
-			<h3>
-				<a href="https://arxiv.org/abs/1910.14034" onclick="getOutboundLink('https://arxiv.org/abs/1910.14034'); return false;" target="_blank"><button class="button">arXiv</button></a>
-			</h3>
-		</div>
-	</div>
-
-    <div class="row">
-		<div class="col-sm-3 col-sm-offset-2">
-			<img src="images/arxiv_2019_ood.PNG" alt="arXiv 2019" class="img-responsive"></img>
-		</div>
-		<div class="col-sm-5">
-			<h5 class="h5-small"><p>Supervised classification methods often assume the train and test data distributions are the same and that all classes in the test set are present in the training set. However, deployed classifiers often require the ability to recognize inputs from outside the training set as unknowns. This problem has been studied under multiple paradigms including out-of-distribution detection and open set recognition. For convolutional neural networks, there have been two major approaches: 1) inference methods to separate knowns from unknowns and 2) feature space regularization strategies to improve model robustness to outlier inputs. There has been little effort to explore the relationship between the two approaches and directly compare performance on anything other than small-scale datasets that have at most 100 categories. Using ImageNet-1K and Places-434, we identify novel combinations of regularization and specialized inference methods that perform best across multiple outlier detection problems of increasing difficulty level. We found that input perturbation and temperature scaling yield the best performance on large scale datasets regardless of the feature space regularization strategy. Improving the feature space by regularizing against a background class can be helpful if an appropriate background class can be found, but this is impractical for large scale image classification datasets.</p></h5>
-		</div>
-    </div>
-	
-	<!-- arXiv Preprint 2019 -->
-	<div class="row">
-		<div class="col-sm-8 col-sm-offset-2">
-			<h3><strong>arXiv 2019</strong>: REMIND Your Neural Network to Prevent Catastrophic Forgetting</h3>
+			<h3><strong>arXiv 2020</strong>: REMIND Your Neural Network to Prevent Catastrophic Forgetting</h3>
 			<h4><strong>Tyler L. Hayes*</strong>, Kushal Kafle*, Robik Shrestha*, Manoj Acharya, Christopher Kanan</h4>
 			<h6>* denotes equal contribution.</h6>
 			<h3>
@@ -458,13 +453,14 @@ rate) </h4>
 		</div>
     </div>
 	
-	<!-- arXiv Preprint 2019 -->
+	<!-- CVPRW 2020 -->
 	<div class="row">
 		<div class="col-sm-8 col-sm-offset-2">
-			<h3><strong>arXiv 2019</strong>: Lifelong Machine Learning with Deep Streaming Linear Discriminant Analysis</h3>
+			<h3><strong>CVPRW 2020</strong>: Lifelong Machine Learning with Deep Streaming Linear Discriminant Analysis</h3>
 			<h4><strong>Tyler L. Hayes</strong> & Christopher Kanan</h4>
 			<h3>
 				<a href="https://arxiv.org/abs/1909.01520" onclick="getOutboundLink('https://arxiv.org/abs/1909.01520'); return false;" target="_blank"><button class="button">arXiv</button></a>
+				<a href="https://github.com/tyler-hayes/Deep_SLDA" onclick="getOutboundLink('https://github.com/tyler-hayes/Deep_SLDA'); return false;" target="_blank"><button class="button">Code</button></a>
 				<a href="data/Deep_SLDA_Poster.pdf" onclick="getOutboundLink('data/Deep_SLDA_Poster.pdf'); return false;" target="_blank"><button class="button">Poster</button></a>
 			</h3>
 		</div>
@@ -476,6 +472,26 @@ rate) </h4>
 		</div>
 		<div class="col-sm-5">
 			<h5 class="h5-small"><p>When a robot acquires new information, ideally it would immediately be capable of using that information to understand its environment. While deep neural networks are now widely used by robots for inferring semantic information, conventional neural networks suffer from catastrophic forgetting when they are incrementally updated, with new knowledge overwriting established representations. While a variety of approaches have been developed that attempt to mitigate catastrophic forgetting in the incremental batch learning scenario, in which an agent learns a large collection of labeled samples at once, streaming learning has been much less studied in the robotics and deep learning communities. In streaming learning, an agent learns instances one-by-one and can be tested at any time. Here, we revisit streaming linear discriminant analysis, which has been widely used in the data mining research community. By combining streaming linear discriminant analysis with deep learning, we are able to outperform both incremental batch learning and streaming learning algorithms on both ImageNet-1K and CORe50.</p></h5>
+		</div>
+    </div>
+	
+		<!-- arXiv Preprint 2019 -->
+	<div class="row">
+		<div class="col-sm-8 col-sm-offset-2">
+			<h3><strong>arXiv 2019</strong>: Are Out-of-Distribution Detection Methods Effective on Large-Scale Datasets?</h3>
+			<h4>Ryne Roady, <strong>Tyler L. Hayes</strong>, Ronald Kemker, Ayesha Gonzales, Christopher Kanan</h4>
+			<h3>
+				<a href="https://arxiv.org/abs/1910.14034" onclick="getOutboundLink('https://arxiv.org/abs/1910.14034'); return false;" target="_blank"><button class="button">arXiv</button></a>
+			</h3>
+		</div>
+	</div>
+
+    <div class="row">
+		<div class="col-sm-3 col-sm-offset-2">
+			<img src="images/arxiv_2019_ood.PNG" alt="arXiv 2019" class="img-responsive"></img>
+		</div>
+		<div class="col-sm-5">
+			<h5 class="h5-small"><p>Supervised classification methods often assume the train and test data distributions are the same and that all classes in the test set are present in the training set. However, deployed classifiers often require the ability to recognize inputs from outside the training set as unknowns. This problem has been studied under multiple paradigms including out-of-distribution detection and open set recognition. For convolutional neural networks, there have been two major approaches: 1) inference methods to separate knowns from unknowns and 2) feature space regularization strategies to improve model robustness to outlier inputs. There has been little effort to explore the relationship between the two approaches and directly compare performance on anything other than small-scale datasets that have at most 100 categories. Using ImageNet-1K and Places-434, we identify novel combinations of regularization and specialized inference methods that perform best across multiple outlier detection problems of increasing difficulty level. We found that input perturbation and temperature scaling yield the best performance on large scale datasets regardless of the feature space regularization strategy. Improving the feature space by regularizing against a background class can be helpful if an appropriate background class can be found, but this is impractical for large scale image classification datasets.</p></h5>
 		</div>
     </div>
   
@@ -581,22 +597,22 @@ rate) </h4>
 				<li>R. Kemker, M. McClure, A. Abitino, <strong>T.L. Hayes</strong>, and C. Kanan. <a href="https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16410" onclick="getOutboundLink('https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16410'); return false;">Measuring catastrophic forgetting in neural networks</a>. In: AAAI, 2018</li>
 			</ul></h5>
 			
+			<h4>Peer-Reviewed Workshop Papers</h4>
+			<h5><ul style="list-style-type:circle">
+			<li><strong>T.L. Hayes</strong> and C. Kanan. <a href="https://arxiv.org/abs/1909.01520" onclick="getOutboundLink('https://arxiv.org/abs/1909.01520'); return false;">Lifelong machine learning with deep streaming linear discriminant analysis</a>. CVPR Workshop: Continual Learning in Computer Vision, 2020</li>
+				<li><strong>T.L. Hayes</strong>, R. Kemker, N.D. Cahill, and C. Kanan. <a href="http://openaccess.thecvf.com/content_cvpr_2018_workshops/w40/html/Hayes_New_Metrics_and_CVPR_2018_paper.html" onclick="getOutboundLink('http://openaccess.thecvf.com/content_cvpr_2018_workshops/w40/html/Hayes_New_Metrics_and_CVPR_2018_paper.html'); return false;">New metrics and experimental paradigms for continual learning</a>. CVPR Workshop: Real-World Challenges and New Benchmarks for Deep Learning in Robotic Vision, 2018</li>
+			</ul></h5>
+			
 			<h4>Papers Under Review</h4>
 			<h5><ul style="list-style-type:circle">
+			<li><strong>T.L. Hayes*</strong>, K. Kafle*, R. Shrestha*, M. Acharya, and C. Kanan. <a href="https://arxiv.org/abs/1910.02509" onclick="getOutboundLink('https://arxiv.org/abs/1910.02509'); return false;">REMIND your neural network to prevent catastrophic forgetting</a>. 2020</li>
 				<li>R. Roady, <strong>T.L. Hayes</strong>, R. Kemker, A. Gonzales, and C. Kanan. <a href="https://arxiv.org/abs/1910.14034" onclick="getOutboundLink('https://arxiv.org/abs/1910.14034'); return false;">Are out-of-distribution detection methods effective on large-scale datasets?</a>. 2019</li>
-				<li><strong>T.L. Hayes*</strong>, K. Kafle*, R. Shrestha*, M. Acharya, and C. Kanan. <a href="https://arxiv.org/abs/1910.02509" onclick="getOutboundLink('https://arxiv.org/abs/1910.02509'); return false;">REMIND your neural network to prevent catastrophic forgetting</a>. 2019</li>
-				<li><strong>T.L. Hayes</strong> and C. Kanan. <a href="https://arxiv.org/abs/1909.01520" onclick="getOutboundLink('https://arxiv.org/abs/1909.01520'); return false;">Lifelong machine learning with deep streaming linear discriminant analysis</a>. 2019</li>
 			</ul></h5>
 		
 			<h4>Conference Papers</h4>
 			<h5><ul style="list-style-type:circle">
 				<li><strong>T.L. Hayes</strong>, R.T. Meinhold, J.F. Hamilton, and N.D. Cahill. <a href="https://www.spiedigitallibrary.org/conference-proceedings-of-spie/10198/101980O/Piecewise-flat-embeddings-for-hyperspectral-image-analysis/10.1117/12.2262302.full" onclick="getOutboundLink('https://www.spiedigitallibrary.org/conference-proceedings-of-spie/10198/101980O/Piecewise-flat-embeddings-for-hyperspectral-image-analysis/10.1117/12.2262302.full'); return false;">Piecewise flat embeddings for hyperspectral image analysis</a>. In: Proc. SPIE DCS Defense and Security: Algorithms and Technologies for Multispectral, Hyperspectral, and Ultraspectral Imagery XXIII, 2017</li>
 				<li>R.T. Meinhold, <strong>T.L. Hayes</strong>, and N.D. Cahill. <a href="https://arxiv.org/abs/1612.06496" onclick="getOutboundLink('https://arxiv.org/abs/1612.06496'); return false;">Efficiently computing piecewise flat embeddings for data clustering and image segmentation</a>. In: Proc. IEEE MIT Undergraduate Research and Technology Conference, 2016</li>
-			</ul></h5>
-		
-			<h4>Workshop Papers</h4>
-			<h5><ul style="list-style-type:circle">
-				<li><strong>T.L. Hayes</strong>, R. Kemker, N.D. Cahill, and C. Kanan. <a href="http://openaccess.thecvf.com/content_cvpr_2018_workshops/w40/html/Hayes_New_Metrics_and_CVPR_2018_paper.html" onclick="getOutboundLink('http://openaccess.thecvf.com/content_cvpr_2018_workshops/w40/html/Hayes_New_Metrics_and_CVPR_2018_paper.html'); return false;">New metrics and experimental paradigms for continual learning</a>. CVPR Workshop: Real-World Challenges and New Benchmarks for Deep Learning in Robotic Vision, Salt Lake City, UT, 2018</li>
 			</ul></h5>
 	
 			<h4>Thesis</h4>

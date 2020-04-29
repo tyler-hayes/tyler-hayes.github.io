@@ -494,7 +494,7 @@ rate) </h4>
 		</div>
 	</div>
 
-	<!-- arXiv Preprint 2019 -->
+	<!-- arXiv Preprint 2020 -->
 	<div class="row">
 		<div class="col-sm-8 col-sm-offset-2">
 			<h3><strong>arXiv 2020</strong>: REMIND Your Neural Network to Prevent Catastrophic Forgetting</h3>
@@ -534,6 +534,26 @@ rate) </h4>
 		</div>
 		<div class="col-sm-5">
 			<h5 class="h5-small"><p>When an agent acquires new information, ideally it would immediately be capable of using that information to understand its environment. This is not possible using conventional deep neural networks, which suffer from catastrophic forgetting when they are incrementally updated, with new knowledge overwriting established representations. A variety of approaches have been developed that attempt to mitigate catastrophic forgetting in the incremental batch learning scenario, where a model learns from a series of large collections of labeled samples. However, in this setting, inference is only possible after a batch has been accumulated, which prohibits many applications. An alternative paradigm is online learning in a single pass through the training dataset on a resource constrained budget, which is known as streaming learning. Streaming learning has been much less studied in the deep learning community. In streaming learning, an agent learns instances one-by-one and can be tested at any time, rather than only after learning a large batch. Here, we revisit streaming linear discriminant analysis, which has been widely used in the data mining research community. By combining streaming linear discriminant analysis with deep learning, we are able to outperform both incremental batch learning and streaming learning algorithms on both ImageNet ILSVRC-2012 and CORe50, a dataset that involves learning to classify from temporally ordered samples.</p></h5>
+		</div>
+    </div>
+	
+	<!-- arXiv Preprint 2020 -->
+	<div class="row">
+		<div class="col-sm-8 col-sm-offset-2">
+			<h3><strong>arXiv 2020</strong>: Do We Need Fully Connected Output Layers in Convolutional Networks?</h3>
+			<h4>Zhongchao Qian, <strong>Tyler L. Hayes</strong>, Kushal Kafle, Christopher Kanan</h4>
+			<h3>
+				<a href="http://arxiv.org/abs/2004.13587" onclick="getOutboundLink('http://arxiv.org/abs/2004.13587'); return false;" target="_blank"><button class="button">arXiv</button></a>
+			</h3>
+		</div>
+	</div>
+
+    <div class="row">
+		<div class="col-sm-3 col-sm-offset-2">
+			<img src="images/arxiv_2019_fixed_output.png" alt="arXiv 2019" class="img-responsive"></img>
+		</div>
+		<div class="col-sm-5">
+			<h5 class="h5-small"><p>Traditionally, deep convolutional neural networks consist of a series of convolutional and pooling layers followed by one or more fully connected (FC) layers to perform the final classification. While this design has been successful, for datasets with a large number of categories, the fully connected layers often account for a large percentage of the network's parameters. For applications with memory constraints, such as mobile devices and embedded platforms, this is not ideal. Recently, a family of architectures that involve replacing the learned fully connected output layer with a fixed layer has been proposed as a way to achieve better efficiency. In this paper we examine this idea further and demonstrate that fixed classifiers offer no additional benefit compared to simply removing the output layer along with its parameters. We further demonstrate that the typical approach of having a fully connected final output layer is inefficient in terms of parameter count. We are able to achieve comparable performance to a traditionally learned fully connected classification output layer on the ImageNet-1K, CIFAR-100, Stanford Cars-196, and Oxford Flowers-102 datasets, while not having a fully connected output layer at all.</p></h5>
 		</div>
     </div>
 
@@ -651,23 +671,20 @@ rate) </h4>
 	<div class="row">
 		<div class="col-sm-8 col-sm-offset-2">
 			<h2>Publications</h2>
-			<h4>Peer-Reviewed Conference Papers</h4>
+			<h4>Peer-Reviewed Papers</h4>
 			<h5><ul style="list-style-type:circle">
+				<li><strong>T.L. Hayes</strong> and C. Kanan. <a href="https://arxiv.org/abs/1909.01520" onclick="getOutboundLink('https://arxiv.org/abs/1909.01520'); return false;">Lifelong machine learning with deep streaming linear discriminant analysis</a>. CVPR Workshop: Continual Learning in Computer Vision, 2020</li>
 				<li><strong>T.L. Hayes</strong>, N.D. Cahill, and C. Kanan. <a href="https://ieeexplore.ieee.org/document/8793982" onclick="getOutboundLink('https://ieeexplore.ieee.org/document/8793982'); return false;">Memory efficient experience replay for streaming learning</a>. In: Proc. IEEE International Conference on Robotics and Automation (ICRA), 2019</li>
+				<li><strong>T.L. Hayes</strong>, R. Kemker, N.D. Cahill, and C. Kanan. <a href="http://openaccess.thecvf.com/content_cvpr_2018_workshops/w40/html/Hayes_New_Metrics_and_CVPR_2018_paper.html" onclick="getOutboundLink('http://openaccess.thecvf.com/content_cvpr_2018_workshops/w40/html/Hayes_New_Metrics_and_CVPR_2018_paper.html'); return false;">New metrics and experimental paradigms for continual learning</a>. CVPR Workshop: Real-World Challenges and New Benchmarks for Deep Learning in Robotic Vision, 2018</li>
 				<li>N.D. Cahill, <strong>T.L. Hayes</strong>, R.T. Meinhold, and J.F. Hamilton. <a href="http://openaccess.thecvf.com/content_cvpr_2018/html/Cahill_Compassionately_Conservative_Balanced_CVPR_2018_paper.html" onclick="getOutboundLink('http://openaccess.thecvf.com/content_cvpr_2018/html/Cahill_Compassionately_Conservative_Balanced_CVPR_2018_paper.html'); return false;">Compassionately conservative balanced cuts for image segmentation</a>. In: Proc. IEEE Conference on Computer Vision and Pattern Recognition (CVPR), 2018</li>
 				<li>R. Kemker, M. McClure, A. Abitino, <strong>T.L. Hayes</strong>, and C. Kanan. <a href="https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16410" onclick="getOutboundLink('https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16410'); return false;">Measuring catastrophic forgetting in neural networks</a>. In: AAAI, 2018</li>
 			</ul></h5>
 
-			<h4>Peer-Reviewed Workshop Papers</h4>
-			<h5><ul style="list-style-type:circle">
-			<li><strong>T.L. Hayes</strong> and C. Kanan. <a href="https://arxiv.org/abs/1909.01520" onclick="getOutboundLink('https://arxiv.org/abs/1909.01520'); return false;">Lifelong machine learning with deep streaming linear discriminant analysis</a>. CVPR Workshop: Continual Learning in Computer Vision, 2020</li>
-				<li><strong>T.L. Hayes</strong>, R. Kemker, N.D. Cahill, and C. Kanan. <a href="http://openaccess.thecvf.com/content_cvpr_2018_workshops/w40/html/Hayes_New_Metrics_and_CVPR_2018_paper.html" onclick="getOutboundLink('http://openaccess.thecvf.com/content_cvpr_2018_workshops/w40/html/Hayes_New_Metrics_and_CVPR_2018_paper.html'); return false;">New metrics and experimental paradigms for continual learning</a>. CVPR Workshop: Real-World Challenges and New Benchmarks for Deep Learning in Robotic Vision, 2018</li>
-			</ul></h5>
-
-			<h4>Papers Under Review</h4>
+			<h4>arXiv Pre-Prints</h4>
 			<h5><ul style="list-style-type:circle">
 			<li><strong>T.L. Hayes*</strong>, K. Kafle*, R. Shrestha*, M. Acharya, and C. Kanan. <a href="https://arxiv.org/abs/1910.02509" onclick="getOutboundLink('https://arxiv.org/abs/1910.02509'); return false;">REMIND your neural network to prevent catastrophic forgetting</a>. 2020</li>
-				<li>R. Roady, <strong>T.L. Hayes</strong>, R. Kemker, A. Gonzales, and C. Kanan. <a href="https://arxiv.org/abs/1910.14034" onclick="getOutboundLink('https://arxiv.org/abs/1910.14034'); return false;">Are out-of-distribution detection methods effective on large-scale datasets?</a>. 2019</li>
+			<li>Z. Qian, <strong>T.L. Hayes</strong>, K. Kafle, and C. Kanan. <a href="https://arxiv.org/abs/2004.13587" onclick="getOutboundLink('https://arxiv.org/abs/2004.13587'); return false;">Do we need fully connected output layers in convolutional networks?</a>. 2020</li>
+			<li>R. Roady, <strong>T.L. Hayes</strong>, R. Kemker, A. Gonzales, and C. Kanan. <a href="https://arxiv.org/abs/1910.14034" onclick="getOutboundLink('https://arxiv.org/abs/1910.14034'); return false;">Are out-of-distribution detection methods effective on large-scale datasets?</a>. 2019</li>
 			</ul></h5>
 
 			<h4>Conference Papers</h4>

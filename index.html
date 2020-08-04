@@ -476,8 +476,10 @@ Previously, I earned a BS in Applied Mathematics from RIT in 2014 and an MS in A
   <div class="row">
     <div class="col-sm-8 col-sm-offset-2">
       <h2>Recent News</h2>
+	  <h4><strong>Jul 2020:</strong> <span class="newflag">NEW!</span> Our paper <a href="https://tyler-hayes.github.io/" onclick="getOutboundLink('https://tyler-hayes.github.io/'); return false;">"RODEO: Replay for Online Object Detection"</a> was accepted at BMVC 2020!</h4>
+	  <h4><strong>Jul 2020:</strong> <span class="newflag">NEW!</span> Our paper <a href="https://tyler-hayes.github.io/" onclick="getOutboundLink('https://tyler-hayes.github.io/'); return false;">"Improved Robustness to Open Set Inputs via Tempered Mixup"</a> was accepted to the ECCV 2020 Workshop on Adversarial Robustness in the Real World!</h4>
 	  <h4><strong>Jul 2020:</strong> <span class="newflag">NEW!</span> Our paper <a href="https://arxiv.org/abs/1910.02509" onclick="getOutboundLink('https://arxiv.org/abs/1910.02509'); return false;">"REMIND Your Neural Network to Prevent Catastrophic Forgetting"</a> was accepted for poster presentation at ECCV 2020! (27.1% acceptance rate)</h4>
-	  <h4><strong>Jun 2020:</strong> <span class="newflag">NEW!</span> Our paper on Deep SLDA won the <a href="https://sites.google.com/view/clvision2020/paper-awards?authuser=0" onclick="getOutboundLink('https://sites.google.com/view/clvision2020/paper-awards?authuser=0'); return false;">Best Paper Award</a> at the CVPR 2020 Workshop on Continual Learning!</h4>
+	  <h4><strong>Jun 2020:</strong> Our paper on Deep SLDA won the <a href="https://sites.google.com/view/clvision2020/paper-awards?authuser=0" onclick="getOutboundLink('https://sites.google.com/view/clvision2020/paper-awards?authuser=0'); return false;">Best Paper Award</a> at the CVPR 2020 Workshop on Continual Learning!</h4>
 	  <h4><strong>May 2020:</strong> Gave an invited talk at the <a href="https://www.continualai.org/" onclick="getOutboundLink('https://www.continualai.org/'); return false;">Continual AI</a> Meetup on <a href="https://www.youtube.com/watch?v=Qo2JKIDZz6w" onclick="getOutboundLink('https://www.youtube.com/watch?v=Qo2JKIDZz6w'); return false;">Continual Learning with Sequential Streaming Data</a>!</h4>
 	  <h4><strong>May 2020:</strong> Won a travel grant to attend the CVPR Workshop on Women in Computer Vision (WiCV)!</h4>
 			<h4><strong>Apr 2020:</strong> My research journey was featured in an <a href="https://www.rit.edu/science/news/student-student-artificial-intelligencemachine-learning?fbclid=IwAR1SMfMZA6ryy8C31YATz5CHOOfDnybFgdnfnfyMO74wYGXod7pqXzJcE9I" onclick="getOutboundLink('https://www.rit.edu/science/news/student-student-artificial-intelligencemachine-learning?fbclid=IwAR1SMfMZA6ryy8C31YATz5CHOOfDnybFgdnfnfyMO74wYGXod7pqXzJcE9I'); return false;">RIT News article</a>!</h4>
@@ -503,6 +505,46 @@ rate)</h4>
 			<h2>Research</h2>
 		</div>
 	</div>
+	
+	<!-- BMVC 2020 -->
+	<div class="row">
+		<div class="col-sm-8 col-sm-offset-2">
+			<h3><strong>BMVC 2020</strong>: RODEO: Replay for Online Object Detection</h3>
+			<h4>Manoj Acharya, <strong>Tyler L. Hayes</strong>, Christopher Kanan</h4>
+			<h3>
+				<a href="https://tyler-hayes.github.io/" onclick="getOutboundLink('https://tyler-hayes.github.io/'); return false;" target="_blank"><button class="button">Coming Soon!</button></a>
+			</h3>
+		</div>
+	</div>
+
+    <div class="row">
+		<div class="col-sm-3 col-sm-offset-2">
+			<img src="images/rodeo.png" alt="BMVC 2020" class="img-responsive"></img>
+		</div>
+		<div class="col-sm-5">
+			<h5 class="h5-small"><p>Humans can incrementally learn to do new visual detection tasks, which is a huge challenge for today's computer vision systems. Incrementally trained deep learning models lack backwards transfer to previously seen classes and suffer from a phenomenon known as catastrophic forgetting. In this paper, we pioneer online streaming learning for object detection, where an agent must learn examples one at a time with severe memory and computational constraints. In object detection, a system must output all bounding boxes for an image with the correct label. Unlike earlier work, the system described in this paper can learn how to do this task in an online manner with new classes being introduced over time. We achieve this capability by using a novel memory replay mechanism that replays entire scenes in an efficient manner. We achieve state-of-the-art results on both the PASCAL VOC 2007 and MS COCO datasets.</p></h5>
+		</div>
+    </div>
+
+	<!-- ECCVW 2020 -->
+	<div class="row">
+		<div class="col-sm-8 col-sm-offset-2">
+			<h3><strong>ECCVW 2020</strong>: Improved Robustness to Open Set Inputs via Tempered Mixup</h3>
+			<h4>Ryne Roady, <strong>Tyler L. Hayes</strong>, Christopher Kanan</h4>
+			<h3>
+				<a href="https://tyler-hayes.github.io/" onclick="getOutboundLink('https://tyler-hayes.github.io/'); return false;" target="_blank"><button class="button">Coming Soon!</button></a>
+			</h3>
+		</div>
+	</div>
+
+    <div class="row">
+		<div class="col-sm-3 col-sm-offset-2">
+			<img src="images/t-mixup.png" alt="ECCVW 2020" class="img-responsive"></img>
+		</div>
+		<div class="col-sm-5">
+			<h5 class="h5-small"><p>Supervised classification methods often assume that evaluation data is drawn from the same distribution as training data and that all classes are present for training. However, real-world classifiers must handle inputs that are far from the training distribution including samples from unknown classes. Open set robustness refers to the ability to properly label samples from previously unseen categories as novel and avoid high-confidence, incorrect predictions. Existing approaches have focused on either novel inference methods, unique training architectures, or supplementing the training data with additional background samples. Here, we propose a simple regularization technique easily applied to existing CNN architectures that improves open set robustness without a background dataset. Our method achieves state-of-the-art results on open set classification baselines and easily scales to large-scale open set classification problems.</p></h5>
+		</div>
+    </div>
 
 	<!-- ECCV 2020 -->
 	<div class="row">
@@ -524,7 +566,7 @@ rate)</h4>
 			<img src="images/arxiv_2019_remind.png" alt="arXiv 2019" class="img-responsive"></img>
 		</div>
 		<div class="col-sm-5">
-			<h5 class="h5-small"><p>People learn throughout life. However, incrementally updating conventional neural networks leads to catastrophic forgetting. A common remedy is replay, which is inspired by how the brain consolidates memory. Replay involves fine-tuning a network on a mixture of new and old instances. While the brain replays compressed memories, existing methods for convolutional networks replay raw images. Here, we propose REMIND, a brain-inspired approach that enables efficient replay with compressed hidden representations. REMIND is trained in an online manner, meaning it learns one example at a time, which is closer to how humans perceive new information. Under the same constraints, REMIND outperforms other methods for incremental class learning on the ImageNet ILSVRC-2012 dataset. We probe REMIND's robustness to data ordering schemes known to induce catastrophic forgetting. We demonstrate REMIND's generality by pioneering online learning for Visual Question Answering (VQA), which cannot be readily done with comparison models.</p></h5>
+			<h5 class="h5-small"><p>People learn throughout life. However, incrementally updating conventional neural networks leads to catastrophic forgetting. A common remedy is replay, which is inspired by how the brain consolidates memory. Replay involves fine-tuning a network on a mixture of new and old instances. While there is neuroscientific evidence that the brain replays compressed memories, existing methods for convolutional networks replay raw images. Here, we propose REMIND, a brain-inspired approach that enables efficient replay with compressed representations. REMIND is trained in an online manner, meaning it learns one example at a time, which is closer to how humans learn. Under the same constraints, REMIND outperforms other methods for incremental class learning on the ImageNet ILSVRC-2012 dataset. We probe REMIND's robustness to data ordering schemes known to induce catastrophic forgetting. We demonstrate REMIND's generality by pioneering online learning for Visual Question Answering (VQA).</p></h5>
 		</div>
     </div>
 
@@ -557,7 +599,7 @@ rate)</h4>
 	<div class="row">
 		<div class="col-sm-8 col-sm-offset-2">
 			<h3><strong>CVPRW 2020</strong>: Stream-51: Streaming Classification and Novelty Detection from Videos</h3>
-			<h4>Ryne Roady*, <strong>Tyler L. Hayes*</strong>, Hitesh Vaidya, & Christopher Kanan</h4>
+			<h4>Ryne Roady*, <strong>Tyler L. Hayes*</strong>, Hitesh Vaidya, Christopher Kanan</h4>
 			<h6>* denotes equal contribution.</h6>
 			<h3>
 				<a href="http://openaccess.thecvf.com/content_CVPRW_2020/html/w15/Roady_Stream-51_Streaming_Classification_and_Novelty_Detection_From_Videos_CVPRW_2020_paper.html" onclick="getOutboundLink('http://openaccess.thecvf.com/content_CVPRW_2020/html/w15/Roady_Stream-51_Streaming_Classification_and_Novelty_Detection_From_Videos_CVPRW_2020_paper.html'); return false;" target="_blank"><button class="button">Paper</button></a>
@@ -713,6 +755,8 @@ rate)</h4>
 			<h2>Publications</h2>
 			<h4>Peer-Reviewed Papers</h4>
 			<h5><ul style="list-style-type:circle">
+			<li>M. Acharya, <strong>T.L. Hayes</strong>, and C. Kanan. <a href="https://tyler-hayes.github.io/" onclick="getOutboundLink('https://tyler-hayes.github.io/'); return false;">RODEO: replay for online object detection</a>. In: British Machine Vision Conference (BMVC), 2020</li>
+			<li>R. Roady, <strong>T.L. Hayes</strong>, and C. Kanan. <a href="https://tyler-hayes.github.io/" onclick="getOutboundLink('https://tyler-hayes.github.io/'); return false;">Improved robustness to open set inputs via tempered mixup</a>. ECCV Workshop: Adversarial Robustness in the Real World, 2020</li>
 				<li><strong>T.L. Hayes*</strong>, K. Kafle*, R. Shrestha*, M. Acharya, and C. Kanan. <a href="https://arxiv.org/abs/1910.02509" onclick="getOutboundLink('https://arxiv.org/abs/1910.02509'); return false;">REMIND your neural network to prevent catastrophic forgetting</a>. In: Proc. European Conference on Computer Vision (ECCV), 2020</li>
 				<li><strong>T.L. Hayes</strong> and C. Kanan. <a href="http://openaccess.thecvf.com/content_CVPRW_2020/html/w15/Hayes_Lifelong_Machine_Learning_With_Deep_Streaming_Linear_Discriminant_Analysis_CVPRW_2020_paper.html" onclick="getOutboundLink('http://openaccess.thecvf.com/content_CVPRW_2020/html/w15/Hayes_Lifelong_Machine_Learning_With_Deep_Streaming_Linear_Discriminant_Analysis_CVPRW_2020_paper.html'); return false;">Lifelong machine learning with deep streaming linear discriminant analysis</a>. CVPR Workshop: Continual Learning in Computer Vision, 2020</li>
 				<li>R. Roady*, <strong>T.L. Hayes*</strong>, H. Vaidya, and C. Kanan. <a href="http://openaccess.thecvf.com/content_CVPRW_2020/html/w15/Roady_Stream-51_Streaming_Classification_and_Novelty_Detection_From_Videos_CVPRW_2020_paper.html" onclick="getOutboundLink('http://openaccess.thecvf.com/content_CVPRW_2020/html/w15/Roady_Stream-51_Streaming_Classification_and_Novelty_Detection_From_Videos_CVPRW_2020_paper.html'); return false;">Stream-51: Streaming Classification and Novelty Detection from Videos</a>. CVPR Workshop: Continual Learning in Computer Vision, 2020</li>

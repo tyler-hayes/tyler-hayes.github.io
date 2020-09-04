@@ -2,8 +2,8 @@
 <html lang="en">
 
 <head>
-    <title>Tyler Hayes</title>
-    <description>Tyler Hayes Personal Website</description>
+    <title>Tyler L. Hayes</title>
+    <description>Tyler L. Hayes Personal Website</description>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="keywords" content="tyler, hayes, rit, rochester institute of technology, new york, computer vision, deep-learning, machine-learning, machine learning, deep learning, artificial intelligence, AI, segmentation, image, graph, manifold, math, RIT, Rochester, rochester, lifelong learning, continual learning">
@@ -416,12 +416,12 @@
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                 </button>
-                <a class="navbar-brand" href="#myPage">Tyler Hayes</a>
+                <a class="navbar-brand" href="#myPage">Tyler L. Hayes</a>
             </div>
             <div class="collapse navbar-collapse" id="myNavbar">
                 <ul class="nav navbar-nav navbar-right">
                     <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#recent">RECENT</a></li>
+                    <li><a href="#recent">NEWS</a></li>
                     <li><a href="#research">RESEARCH</a></li>
                     <li><a href="#publications">PUBLICATIONS</a></li>
                     <li data-toggle="collapse" data-target=".navbar-collapse.in"><a href="data/Tyler_Hayes_CV.pdf" onclick="getOutboundLink('data/Tyler_Hayes_CV.pdf'); return false;" target="_blank">CV</a></li>
@@ -431,7 +431,7 @@
     </nav>
 
     <div class="jumbotron text-center">
-        <h1>Tyler Hayes<br>
+        <h1>Tyler L. Hayes<br>
   	<div class = "external-link-container">
 	  <div class="external-link-center-wrapper">
 	    <div class = "external-link-icon">
@@ -487,6 +487,7 @@ Previously, I earned a BS in Applied Mathematics from RIT in 2014 and an MS in A
       <h2>News</h2>
 	  
 		<!-- Recent News -->
+		<h4><strong>Sep 2020:</strong> <span class="newflag">NEW!</span> Our paper <a href="https://doi.org/10.1371/journal.pone.0238302" onclick="getOutboundLink('https://doi.org/10.1371/journal.pone.0238302'); return false;">"Are Open Set Classification Methods Effective on Large-Scale Datasets?"</a> was published in PLoS ONE!</h4>
 		<h4><strong>Aug 2020:</strong> <span class="newflag">NEW!</span> Successfully defended my dissertation proposal and advanced to candidacy.</h4>
 		<h4><strong>Jul 2020:</strong> Our paper <a href="https://arxiv.org/abs/2008.06439" onclick="getOutboundLink('https://arxiv.org/abs/2008.06439'); return false;">"RODEO: Replay for Online Object Detection"</a> was accepted for poster presentation at BMVC 2020! (29.1% acceptance rate)</h4>
 		<h4><strong>Jul 2020:</strong> Our paper <a href="https://tyler-hayes.github.io/" onclick="getOutboundLink('https://tyler-hayes.github.io/'); return false;">"Improved Robustness to Open Set Inputs via Tempered Mixup"</a> was accepted to the ECCV 2020 Workshop on Adversarial Robustness in the Real World!</h4>
@@ -520,6 +521,27 @@ Previously, I earned a BS in Applied Mathematics from RIT in 2014 and an MS in A
 	<div class="row">
 		<h2>Research</h2>
 	</div>
+	
+	<!-- PLOS ONE 2020 -->
+	<div class="row">
+		<div class="col-sm-8 col-sm-offset-2">
+			<h3><strong>PLoS ONE 2020</strong>: Are Open Set Classification Methods Effective on Large-Scale Datasets?</h3>
+			<h4>Ryne Roady, <strong>Tyler L. Hayes</strong>, Ronald Kemker, Ayesha Gonzales, Christopher Kanan</h4>
+			<h3>
+				<a href="https://arxiv.org/abs/1910.14034" onclick="getOutboundLink('https://arxiv.org/abs/1910.14034'); return false;" target="_blank"><button class="button">arXiv</button></a>
+				<a href="https://doi.org/10.1371/journal.pone.0238302" onclick="getOutboundLink('https://doi.org/10.1371/journal.pone.0238302'); return false;" target="_blank"><button class="button">Paper</button></a>
+			</h3>
+		</div>
+	</div>
+
+    <div class="row">
+		<div class="col-sm-2 col-sm-offset-2">
+			<img src="images/arxiv_2019_ood.PNG" alt="arXiv 2019" class="img-responsive"></img>
+		</div>
+		<div class="col-sm-6">
+			<h5 class="h5-small"><p>Supervised classification methods often assume the train and test data distributions are the same and that all classes in the test set are present in the training set. However, deployed classifiers often require the ability to recognize inputs from outside the training set as unknowns. This problem has been studied under multiple paradigms including out-of-distribution detection and open set recognition. For convolutional neural networks, there have been two major approaches: 1) inference methods to separate knowns from unknowns and 2) feature space regularization strategies to improve model robustness to novel inputs. Up to this point, there has been little attention to exploring the relationship between the two approaches and directly comparing performance on large-scale datasets that have more than a few dozen categories. Using the ImageNet ILSVRC-2012 large-scale classification dataset, we identify novel combinations of regularization and specialized inference methods that perform best across multiple open set classification problems of increasing difficulty level. We find that input perturbation and temperature scaling yield significantly better performance on large-scale datasets than other inference methods tested, regardless of the feature space regularization strategy. Conversely, we find that improving performance with advanced regularization schemes during training yields better performance when baseline inference techniques are used; however, when advanced inference methods are used to detect open set classes, the utility of these combersome training paradigms is less evident.</p></h5>
+		</div>
+    </div>
 	
 	<!-- BMVC 2020 -->
 	<div class="row">
@@ -592,8 +614,8 @@ Previously, I earned a BS in Applied Mathematics from RIT in 2014 and an MS in A
 	<div class="row">
 		<div class="col-sm-8 col-sm-offset-2">
 			<h3><strong>CVPRW 2020</strong>: Lifelong Machine Learning with Deep Streaming Linear Discriminant Analysis</h3>
-			<h4><strong>Tyler L. Hayes</strong> & Christopher Kanan</h4>
 			<h4><strong>Best Paper Award at the CVPR 2020 Workshop on Continual Learning in Computer Vision</strong></h4>
+			<h4><strong>Tyler L. Hayes</strong> & Christopher Kanan</h4>
 			<h3>
 				<a href="https://arxiv.org/abs/1909.01520" onclick="getOutboundLink('https://arxiv.org/abs/1909.01520'); return false;" target="_blank"><button class="button">arXiv</button></a>
 				<a href="http://openaccess.thecvf.com/content_CVPRW_2020/html/w15/Hayes_Lifelong_Machine_Learning_With_Deep_Streaming_Linear_Discriminant_Analysis_CVPRW_2020_paper.html" onclick="getOutboundLink('http://openaccess.thecvf.com/content_CVPRW_2020/html/w15/Hayes_Lifelong_Machine_Learning_With_Deep_Streaming_Linear_Discriminant_Analysis_CVPRW_2020_paper.html'); return false;" target="_blank"><button class="button">Paper</button></a>
@@ -654,26 +676,6 @@ Previously, I earned a BS in Applied Mathematics from RIT in 2014 and an MS in A
 		</div>
 		<div class="col-sm-6">
 			<h5 class="h5-small"><p>Traditionally, deep convolutional neural networks consist of a series of convolutional and pooling layers followed by one or more fully connected (FC) layers to perform the final classification. While this design has been successful, for datasets with a large number of categories, the fully connected layers often account for a large percentage of the network's parameters. For applications with memory constraints, such as mobile devices and embedded platforms, this is not ideal. Recently, a family of architectures that involve replacing the learned fully connected output layer with a fixed layer has been proposed as a way to achieve better efficiency. In this paper we examine this idea further and demonstrate that fixed classifiers offer no additional benefit compared to simply removing the output layer along with its parameters. We further demonstrate that the typical approach of having a fully connected final output layer is inefficient in terms of parameter count. We are able to achieve comparable performance to a traditionally learned fully connected classification output layer on the ImageNet-1K, CIFAR-100, Stanford Cars-196, and Oxford Flowers-102 datasets, while not having a fully connected output layer at all.</p></h5>
-		</div>
-    </div>
-
-		<!-- arXiv Preprint 2019 -->
-	<div class="row">
-		<div class="col-sm-8 col-sm-offset-2">
-			<h3><strong>arXiv 2019</strong>: Are Out-of-Distribution Detection Methods Effective on Large-Scale Datasets?</h3>
-			<h4>Ryne Roady, <strong>Tyler L. Hayes</strong>, Ronald Kemker, Ayesha Gonzales, Christopher Kanan</h4>
-			<h3>
-				<a href="https://arxiv.org/abs/1910.14034" onclick="getOutboundLink('https://arxiv.org/abs/1910.14034'); return false;" target="_blank"><button class="button">arXiv</button></a>
-			</h3>
-		</div>
-	</div>
-
-    <div class="row">
-		<div class="col-sm-2 col-sm-offset-2">
-			<img src="images/arxiv_2019_ood.PNG" alt="arXiv 2019" class="img-responsive"></img>
-		</div>
-		<div class="col-sm-6">
-			<h5 class="h5-small"><p>Supervised classification methods often assume the train and test data distributions are the same and that all classes in the test set are present in the training set. However, deployed classifiers often require the ability to recognize inputs from outside the training set as unknowns. This problem has been studied under multiple paradigms including out-of-distribution detection and open set recognition. For convolutional neural networks, there have been two major approaches: 1) inference methods to separate knowns from unknowns and 2) feature space regularization strategies to improve model robustness to outlier inputs. There has been little effort to explore the relationship between the two approaches and directly compare performance on anything other than small-scale datasets that have at most 100 categories. Using ImageNet-1K and Places-434, we identify novel combinations of regularization and specialized inference methods that perform best across multiple outlier detection problems of increasing difficulty level. We found that input perturbation and temperature scaling yield the best performance on large scale datasets regardless of the feature space regularization strategy. Improving the feature space by regularizing against a background class can be helpful if an appropriate background class can be found, but this is impractical for large scale image classification datasets.</p></h5>
 		</div>
     </div>
 
@@ -773,6 +775,7 @@ Previously, I earned a BS in Applied Mathematics from RIT in 2014 and an MS in A
 			<h2>Publications</h2>
 			<h4>Peer-Reviewed Papers</h4>
 			<h5><ul style="list-style-type:circle">
+			<li>R. Roady, <strong>T.L. Hayes</strong>, R. Kemker, A. Gonzales, and C. Kanan. <a href="https://doi.org/10.1371/journal.pone.0238302" onclick="getOutboundLink('https://doi.org/10.1371/journal.pone.0238302'); return false;">Are open set classification methods effective on large-scale datasets?</a>. In: PLoS ONE, 2020</li>
 			<li>M. Acharya, <strong>T.L. Hayes</strong>, and C. Kanan. <a href="https://arxiv.org/abs/2008.06439" onclick="getOutboundLink('https://arxiv.org/abs/2008.06439'); return false;">RODEO: replay for online object detection</a>. In: British Machine Vision Conference (BMVC), 2020</li>
 			<li>R. Roady, <strong>T.L. Hayes</strong>, and C. Kanan. <a href="https://tyler-hayes.github.io/" onclick="getOutboundLink('https://tyler-hayes.github.io/'); return false;">Improved robustness to open set inputs via tempered mixup</a>. ECCV Workshop: Adversarial Robustness in the Real World, 2020</li>
 				<li><strong>T.L. Hayes*</strong>, K. Kafle*, R. Shrestha*, M. Acharya, and C. Kanan. <a href="https://arxiv.org/abs/1910.02509" onclick="getOutboundLink('https://arxiv.org/abs/1910.02509'); return false;">REMIND your neural network to prevent catastrophic forgetting</a>. In: Proc. European Conference on Computer Vision (ECCV), 2020</li>
@@ -784,10 +787,9 @@ Previously, I earned a BS in Applied Mathematics from RIT in 2014 and an MS in A
 				<li>R. Kemker, M. McClure, A. Abitino, <strong>T.L. Hayes</strong>, and C. Kanan. <a href="https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16410" onclick="getOutboundLink('https://www.aaai.org/ocs/index.php/AAAI/AAAI18/paper/view/16410'); return false;">Measuring catastrophic forgetting in neural networks</a>. In: AAAI, 2018</li>
 			</ul></h5>
 
-			<h4>arXiv Pre-Prints</h4>
+			<h4>Pre-Prints</h4>
 			<h5><ul style="list-style-type:circle">
 			<li>Z. Qian, <strong>T.L. Hayes</strong>, K. Kafle, and C. Kanan. <a href="https://arxiv.org/abs/2004.13587" onclick="getOutboundLink('https://arxiv.org/abs/2004.13587'); return false;">Do we need fully connected output layers in convolutional networks?</a>. 2020</li>
-			<li>R. Roady, <strong>T.L. Hayes</strong>, R. Kemker, A. Gonzales, and C. Kanan. <a href="https://arxiv.org/abs/1910.14034" onclick="getOutboundLink('https://arxiv.org/abs/1910.14034'); return false;">Are out-of-distribution detection methods effective on large-scale datasets?</a>. 2019</li>
 			</ul></h5>
 
 			<h4>Conference Papers</h4>

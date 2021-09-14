@@ -35,14 +35,21 @@
          * using 'navigator.sendBeacon' in browser that support it.
          */
         var getOutboundLink = function(url) {
-            gtag('event', 'click', {
-                'event_category': 'outbound',
-                'event_label': url,
-                'transport_type': 'beacon',
-                'event_callback': function() {
-                    document.location = url;
-                }
-            });
+			if (window.gtag && gtag.loaded)
+			{
+				gtag('event', 'click', {
+					'event_category': 'outbound',
+					'event_label': url,
+					'transport_type': 'beacon',
+					'event_callback': function() {
+						document.location = url;
+					}
+				});
+			}
+			else
+			{
+				document.location = url;
+			}
         }
     </script>
 
@@ -488,7 +495,7 @@ Previously, I earned a BS in Applied Mathematics from RIT in 2014 and an MS in A
 	  
 		<!-- Recent News -->
 		<!-- <h4><strong>Sep 2020:</strong> <span class="newflag">NEW!</span> Our paper <a href="https://doi.org/10.1371/journal.pone.0238302" onclick="getOutboundLink('https://doi.org/10.1371/journal.pone.0238302'); return false;">"Are Open Set Classification Methods Effective on Large-Scale Datasets?"</a> was published in PLoS ONE!</h4>-->
-		<h4><strong>Jun 2021:</strong> <span class="newflag">NEW!</span> Gave an invited talk at the <a href="https://www.continualai.org/" onclick="getOutboundLink('https://www.continualai.org/'); return false;">Continual AI</a> Reading Group on our paper <a href="https://youtu.be/iCV7_PD_uBQ" onclick="getOutboundLink('https://youtu.be/iCV7_PD_uBQ'); return false;">"Replay in Deep Learning: Current Approaches and Missing Biological
+		<h4><strong>Jun 2021:</strong> Gave an invited talk at the <a href="https://www.continualai.org/" onclick="getOutboundLink('https://www.continualai.org/'); return false;">Continual AI</a> Reading Group on our paper <a href="https://youtu.be/iCV7_PD_uBQ" onclick="getOutboundLink('https://youtu.be/iCV7_PD_uBQ'); return false;">"Replay in Deep Learning: Current Approaches and Missing Biological
   Elements"</a>!</h4>
 		<h4><strong>May 2021:</strong> Our paper <a href="https://arxiv.org/abs/2104.04132" onclick="getOutboundLink('https://arxiv.org/abs/2104.04132'); return false;">"Replay in Deep Learning: Current Approaches and Missing Biological
   Elements"</a> was accepted for publication in the MIT Press journal of Neural Computation!</h4>
@@ -558,6 +565,7 @@ Previously, I earned a BS in Applied Mathematics from RIT in 2014 and an MS in A
 			<h4><strong>Tyler L. Hayes</strong>, Giri P. Krishnan, Maxim Bazhenov, Hava T. Siegelmann, Terrence J. Sejnowski, Christopher Kanan</h4>
 			<h3>
 				<a href="https://arxiv.org/abs/2104.04132" onclick="getOutboundLink('https://arxiv.org/abs/2104.04132'); return false;" target="_blank"><button class="button">arXiv</button></a>
+				<a href="https://doi.org/10.1162/neco_a_01433" onclick="getOutboundLink('https://doi.org/10.1162/neco_a_01433'); return false;" target="_blank"><button class="button">Paper</button></a>
 				<a href="https://youtu.be/iCV7_PD_uBQ" onclick="getOutboundLink('https://youtu.be/iCV7_PD_uBQ'); return false;" target="_blank"><button class="button">Video</button></a>
 			</h3>
 		</div>

@@ -555,7 +555,39 @@ Before that, I earned an MS in Applied and Computational Mathematics from RIT an
 		<h2>Research</h2>
 	</div>
 	
-	<!-- BMVC 2022 -->
+	<!-- arXiv 2022 -->
+	<div class="row">
+		<div class="col-sm-8 col-sm-offset-2">
+			<h3><strong>arXiv 2023</strong>: SIESTA: Efficient Online Continual Learning with Sleep</h3>
+			<h4>Md Yousuf Harun*, Jhair Gallardo*, <strong>Tyler L. Hayes</strong>, Ronald Kemker, Christopher Kanan</h4>
+            <h6>* denotes equal contribution.</h6>
+			<h3>
+				<a href="https://arxiv.org/abs/2303.10725" onclick="getOutboundLink('https://arxiv.org/abs/2303.10725'); return false;" target="_blank"><button class="button">arXiv</button></a>
+			</h3>
+		</div>
+	</div>
+
+    <div class="row">
+		<div class="col-sm-2 col-sm-offset-2">
+			<img src="images/siesta.png" alt="arXiv 2023" class="img-responsive"></img>
+		</div>
+		<div class="col-sm-6">
+			<h5 class="h5-small"><p>In supervised continual learning, a deep neural network (DNN) is updated with an ever-growing data stream. Unlike the offline setting where data is shuffled, we cannot make any distributional assumptions about the data stream. Ideally, only one pass through the dataset is needed for computational efficiency. However, existing methods are inadequate and make many assumptions that cannot be
+                made for real-world applications, while simultaneously failing to improve computational efficiency.
+                In this paper, we propose a novel online continual learning method, SIESTA based on wake/sleep
+                framework for training, which is well aligned to the needs of on-device learning. The major goal of
+                SIESTA is to advance compute efficient continual learning so that DNNs can be updated efficiently
+                using far less time and energy. The principal innovations of SIESTA are: 1) rapid online updates
+                using a rehearsal-free, backpropagation-free, and data-driven network update rule during its wake
+                phase, and 2) expedited memory consolidation using a compute-restricted rehearsal policy during its
+                sleep phase. For memory efficiency, SIESTA adapts latent rehearsal using memory indexing from
+                REMIND. Compared to REMIND and prior arts, SIESTA is far more computationally efficient, enabling continual learning on ImageNet-1K in under 2.4 hours on a single GPU; moreover, in the
+                augmentation-free setting it matches the performance of the offline learner, a milestone critical to
+                driving adoption of continual learning in real-world applications.</p></h5>
+		</div>
+    </div>	
+
+    <!-- BMVC 2022 -->
 	<div class="row">
 		<div class="col-sm-8 col-sm-offset-2">
 			<h3><strong>BMVC 2022</strong>: Can I see an Example? Active Learning the Long Tail of Attributes and Relations</h3>
